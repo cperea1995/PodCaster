@@ -6,7 +6,8 @@ class Api::UsersController < ApplicationController
             login!(@user)
             render "api/users/show"
         else
-            render json: @user.error.full_messages, status: 422
+            render json: @user.errors.full_messages, status: 422
+        end
     end
 
     def show
@@ -16,6 +17,7 @@ class Api::UsersController < ApplicationController
             render "api/users/show"
         else
             render json: ["No user found"], status: 404
+        end
     end
 
     private

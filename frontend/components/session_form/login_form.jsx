@@ -35,6 +35,7 @@ class LoginForm extends React.Component {
                     <div className="button-container">
                         <input className="git-button" type="button" onClick={() => location.href ='https://github.com/cperea1995/PodCaster/wiki'} value="Checkout My Github"/>
                         <input className="linkedin-button" type="button" onClick={() => location.href ='https://www.linkedin.com/feed/'} value="Checkout My linkedin"/>
+                        <h3 className="or"><span className="or-span">OR</span></h3>
                     </div>
                     <form className="login-form" onSubmit={this.handleSubmit}>
                         <input className="email-input" type="text"
@@ -42,12 +43,14 @@ class LoginForm extends React.Component {
                         placeholder="Email"
                         onChange={this.update('email')}
                         />
-                        <input className="password-input" type="text"
+                        <input className="password-input" type="password"
                         value={this.state.password}
                         placeholder="Password"
                         onChange={this.update('password')}
                         />
-                        <button className="login-button">Login</button>
+                        <button className="login-button">Log In</button>
+                        <h3 className="forgot">Forgot your password?</h3>
+                        <div className="line"></div>
                     </form>
 
                     <h2 className="no-account">Don't have an account?</h2>

@@ -15,27 +15,53 @@
 }
 
 .login-container {
-   /* display: flex;
+   display: flex; 
    justify-content: center;
-   align-items: center; */
-   text-align: center;
+   align-items: center; 
+   flex-direction: column;
+   /* text-align: center; */
    /* outline: 2px solid red; */
 }
 
+.button-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.or {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #d9dadc; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    margin-top: 30px;
+}
+
+.or-span {
+    background: white; 
+    padding:0 10px 0 10px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
 .button-header {
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 17px;
     padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .login-form {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .email-input {
-    width: 434px;
+    /* width: 434px; */
+    width: 100%;
     height: 29px;
     margin-top: 20px;
     font-size: 14px;
@@ -43,38 +69,58 @@
 }
 
 .password-input {
-    width: 434px;
+    /* width: 434px; */
+    width: 100%;
     height: 29px;
     margin-top: 20px;
     font-size: 14px;
     opacity: .8;
 }
 
+.forgot {
+    font-family: 'Montserrat', sans-serif;
+    color: #1DB954;
+    padding-top: 25px;
+    font-size: 14px;
+}
+
+.line {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #d9dadc; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    margin-top: 30px;
+}
+
 .no-account {
-    font-weight: bold;
-    font-size: 17px;
+    /* font-weight: bold; */
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 .git-button, 
 .linkedin-button {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: column; */
     border-radius: 500px;
     width: 450px;
     cursor: pointer;
     border: .2px solid black;
-    font-size: 20px;
-    margin-left: 328px;
+    font-size: 17px;
+    /* margin-left: 731px; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .git-button {
     background-color: #3b5998;
     color: white;
     padding: 8px 0 8px 0;
-    transition: opacity .4s;
+    transition: all .4s;
     margin-bottom: 10px;
+    outline: none;
 }
 
 .linkedin-button {
@@ -82,9 +128,13 @@
     color: white;
     padding: 8px 0 8px 0;
     transition: opacity .4s;
+    outline: none;
 }
 
-.git-button:hover,
+.git-button:hover {
+    filter: brightness(125%);
+}
+
 .linkedin-button:hover {
     opacity: 0.8;
 }
@@ -97,12 +147,19 @@
     width: 450px;
     cursor: pointer;
     border: .2px solid black;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     color: white;
     padding: 8px 0 8px 0;
-    margin-top: 15px;
+    margin-top: 35px;
     background-color: #1DB954;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: all .4s;
+}
+
+.login-button:hover {
+    filter: brightness(115%);
 }
 
 .signup-button {
@@ -113,11 +170,20 @@
     width: 450px;
     cursor: pointer;
     border: 2px solid black;
-    font-size: 15px;
-    margin-left: 328px;
+    font-size: 14px;
+    /* margin-left: 731px; */
     text-decoration: none;
     color: black;
     padding: 8px 0 8px 0;
     margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: all .4s;
+    background-color: white;
+}
+
+.signup-button:hover {
+    background-color: gray;
+    color: white;
 }
 

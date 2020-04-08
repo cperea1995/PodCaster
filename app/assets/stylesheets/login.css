@@ -1,0 +1,123 @@
+.header {
+    display: block;
+    border-bottom: 1px solid #d9dadc;
+    margin-bottom: 30px;
+}
+
+.login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 10px 0 10px 0;
+}
+
+.login-container {
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   text-align: center;
+   /* outline: 2px solid red; */
+}
+
+.button-header {
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.email-input {
+    width: 434px;
+    height: 29px;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.password-input {
+    width: 434px;
+    height: 29px;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.no-account {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.git-button, 
+.linkedin-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 500px;
+    width: 450px;
+    cursor: pointer;
+    border: .2px solid black;
+    font-size: 20px;
+    margin-left: 328px;
+}
+
+.git-button {
+    background-color: #3b5998;
+    color: white;
+    padding: 8px 0 8px 0;
+    transition: opacity .4s;
+    margin-bottom: 10px;
+}
+
+.linkedin-button {
+    background-color: black;
+    color: white;
+    padding: 8px 0 8px 0;
+    transition: opacity .4s;
+}
+
+.git-button:hover,
+.linkedin-button:hover {
+    opacity: 0.8;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 500px;
+    width: 450px;
+    cursor: pointer;
+    border: .2px solid black;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 0 8px 0;
+    margin-top: 15px;
+    background-color: #1DB954;
+}
+
+.signup-button {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 500px;
+    width: 450px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 15px;
+    margin-left: 328px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 0 8px 0;
+    margin-top: 15px;
+}
+

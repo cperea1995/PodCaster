@@ -6,11 +6,14 @@ const Header = (props) => {
 
     const sessionLinks = () => {
         return (
-            <nav>
-                <Link to="/login">Login</Link>
-                &nbsp;
-                <Link to="/signup">Sign Up</Link>
-            </nav>
+            <>
+                <h1>PodCaster</h1>
+                <nav>
+                    <Link to="/login">Login</Link>
+                    &nbsp;
+                    <Link to="/signup">Sign Up</Link>
+                </nav>
+            </>
         );
     };
 

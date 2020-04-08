@@ -26,20 +26,34 @@ class LoginForm extends React.Component {
     render() {
         return (
             <>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text"
-                    value={this.state.email}
-                    onChange={this.update('email')}
-                    />
-                    <input type="text"
-                    value={this.state.password}
-                    onChange={this.update('password')}
-                    />
-                    <button>Login</button>
-                </form>
+                <div className="header">
+                    <img src={window.logo} className="login-logo"/>
+                </div>
+            
+                <div className="login-container">
+                    <h2 className="button-header" >To continue, log in to PodCaster.</h2>
+                    <div className="button-container">
+                        <input className="git-button" type="button" onClick={() => location.href ='https://github.com/cperea1995/PodCaster/wiki'} value="Checkout My Github"/>
+                        <input className="linkedin-button" type="button" onClick={() => location.href ='https://www.linkedin.com/feed/'} value="Checkout My linkedin"/>
+                    </div>
+                    <form className="login-form" onSubmit={this.handleSubmit}>
+                        <input className="email-input" type="text"
+                        value={this.state.email}
+                        placeholder="Email"
+                        onChange={this.update('email')}
+                        />
+                        <input className="password-input" type="text"
+                        value={this.state.password}
+                        placeholder="Password"
+                        onChange={this.update('password')}
+                        />
+                        <button className="login-button">Login</button>
+                    </form>
 
-                <h2>Don't have an account?</h2>
-                {this.props.navLink}
+                    <h2 className="no-account">Don't have an account?</h2>
+                    {this.props.navLink}
+                </div>
+                
             </>
         );
     }

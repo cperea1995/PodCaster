@@ -9,7 +9,6 @@ const App = () => {
     return (
         <>
             <header>
-                <h1>PodCaster</h1>
                 <Route exact path="/" component={HeaderContainer} />
             </header>
 

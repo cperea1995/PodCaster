@@ -4,8 +4,8 @@
     justify-content: flex-end;
     align-items: center;
     height: 60px;
-    /* background-color: #191414; */
-    background-color: black;
+    background-color: #191414;
+    /* background-color: black; */
 }
 
 .root-login-link {
@@ -23,7 +23,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: white;
     text-decoration: none;
     border-radius: 500px;
     width: 125px;
@@ -44,6 +43,39 @@
     transform: scale(1.03);
 }
 
-.body {
+.loggedin-root-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
     background-color: #191414;
+    /* background-color: black; */
+}
+
+.username {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    border-radius: 500px;
+    width: 125px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 0 8px 0;
+    margin-left: 35px;
+    margin-right: 45px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    background-color: black;
+    /* background-color: white; */
+    transition: all .2s;
+    background-image: url(user-icon-white.png);
+    background-repeat: no-repeat;
+    background-position: 10px 8px; 
+}
+
+.username:hover {
+    background-color: gray;
 }

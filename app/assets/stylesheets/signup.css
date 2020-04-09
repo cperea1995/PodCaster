@@ -102,11 +102,6 @@
     text-indent: 10px;
 }
 
-.dob-container {
-    display: block;
-    margin-right: 302px;
-}
-
 .gender-container {
     display: flex;
     margin: 10px;
@@ -173,7 +168,7 @@
 
 .date-label {
     margin-top: 10px;
-    width: 100%;
+    width: 95%;
     font-family: 'Montserrat', sans-serif;
     color: #88898c;
     font-size: 12px;
@@ -181,4 +176,20 @@
 
 .date {
     margin-top: 2px;
+}
+
+.date-container {
+    /* padding-top: 10px; */
+    margin-top: 2px;
+    display: flex;
+    width: 95%;
+}
+
+.day {
+    margin-left: 10px;
+    width: 20px;
+}
+
+.year {
+    margin-left: 10px;
 }

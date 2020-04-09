@@ -7,7 +7,6 @@ const Header = (props) => {
     const sessionLinks = () => {
         return (
             <>
-                
                 <nav className="root-page-header">
                     <Link className="root-login-link" to="/login">Login</Link>
                     &nbsp;
@@ -20,8 +19,10 @@ const Header = (props) => {
     const personalHeader = () => {
         return (
             <>
-                <button onClick={props.logout}>Logout</button>
-                <div>{props.currentUser.email}</div>
+             <nav className="loggedin-root-page-header">
+                    <button className="root-logout" onClick={props.logout}>Logout</button>
+                    <div className="username">{props.currentUser.username}</div>
+             </nav>
             </>
         );
     };

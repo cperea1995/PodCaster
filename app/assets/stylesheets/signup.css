@@ -36,6 +36,10 @@
     outline: none;
 }
 
+.signup-git-button:hover {
+    filter: brightness(125%);
+}
+
 .signup-or {
     width: 430px; 
     text-align: center; 

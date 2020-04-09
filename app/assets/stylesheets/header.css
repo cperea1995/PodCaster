@@ -1,0 +1,49 @@
+.root-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    /* background-color: #191414; */
+    background-color: black;
+}
+
+.root-login-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.root-login-link:hover {
+    transform: scale(1.05);
+}
+
+.root-signup-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    border-radius: 500px;
+    width: 125px;
+    cursor: pointer;
+    border: 2px solid black;
+    font-size: 14px;
+    color: black;
+    padding: 8px 0 8px 0;
+    margin-left: 35px;
+    margin-right: 45px;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    /* transition: all .2s; */
+    background-color: white;
+}
+
+.root-signup-link:hover {
+    transform: scale(1.03);
+}
+
+.body {
+    background-color: #191414;
+}

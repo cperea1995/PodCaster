@@ -7,11 +7,11 @@ const Header = (props) => {
     const sessionLinks = () => {
         return (
             <>
-                <h1>PodCaster</h1>
-                <nav>
-                    <Link to="/login">Login</Link>
+                
+                <nav className="root-page-header">
+                    <Link className="root-login-link" to="/login">Login</Link>
                     &nbsp;
-                    <Link to="/signup">Sign Up</Link>
+                    <Link className="root-signup-link" to="/signup">Sign Up</Link>
                 </nav>
             </>
         );

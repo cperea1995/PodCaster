@@ -106,8 +106,9 @@
   display: block;
   font-family: 'Montserrat', sans-serif;
   margin-left: -8px;
-  margin-top: 7px;
+  margin-top: 13px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .show {
@@ -118,6 +119,7 @@
     border: none;
     width: 170px;
     background-color: darkgray;
+    text-align: left;
 }
 
 .dropdown-content button:hover {

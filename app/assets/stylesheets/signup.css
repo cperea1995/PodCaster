@@ -1,0 +1,180 @@
+.signup-header {
+    display: block;
+    border-bottom: 1px solid #d9dadc;
+    margin-bottom: 30px;
+}
+
+.signup-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 10px 0 10px 0;
+}
+
+.signup-button-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.signup-git-button {
+    border-radius: 500px;
+    width: 320px;
+    cursor: pointer;
+    border: .2px solid black;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #3b5998;
+    color: white;
+    padding: 8px 0 8px 0;
+    transition: all .4s;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.signup-or {
+    width: 430px; 
+    text-align: center; 
+    border-bottom: 1px solid #d9dadc; 
+    line-height: 0.1em;
+    margin: 10px 0 20px; 
+    margin-top: 30px;
+}
+
+.signup-or-span {
+    background: white; 
+    padding:0 10px 0 10px; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+.signup-container {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+
+    display: flex; 
+    /* justify-content: center; */
+    align-items: center; 
+    flex-direction: column;
+}
+
+.signup-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-texthead {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    /* padding-bottom: 25px; */
+    font-size: 15px;
+}
+
+.signup-email {
+    width: 430px;
+    /* width: 100%; */
+    height: 29px;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: .8;
+    text-indent: 10px;
+}
+
+.signup-password,
+.signup-username {
+    width: 430px;
+    /* width: 100%; */
+    height: 29px;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: .8;
+    text-indent: 10px;
+}
+
+.dob-container {
+    display: block;
+    margin-right: 302px;
+}
+
+.gender-container {
+    display: flex;
+    margin: 10px;
+    padding-right: 195px;
+}
+
+.male {
+    padding-right: 20px;
+}
+
+.female {
+    padding-right: 20px;
+}
+
+.male-text {
+    padding-left: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #88898c;
+}
+
+.female-text {
+    padding-left: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #88898c;
+}
+
+.nonbinary-text {
+    padding-left: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #88898c;
+}
+
+.signup-button {
+    border-radius: 500px;
+    width: 320px;
+    cursor: pointer;
+    border: .2px solid black;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1DB954;
+    color: white;
+    padding: 8px 0 8px 0;
+    transition: all .4s;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.signup-button:hover {
+    filter: brightness(115%);
+}
+
+.login-redirect {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
+.redirect {
+    text-decoration: none;
+    color: #1DB954;
+}
+
+.date-label {
+    margin-top: 10px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #88898c;
+    font-size: 12px;
+}
+
+.date {
+    margin-top: 2px;
+}

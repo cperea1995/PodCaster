@@ -78,7 +78,9 @@ class SignupForm extends React.Component {
                         
                         <h3 className="date-label">Date of birth</h3>
                         <div className="date-container">
-                            <select value={this.state.month} onChange={this.update('month')}>
+                            <select value={this.state.month} 
+                            className="select-dob"
+                            onChange={this.update('month')}>
                                 <option value="selected">Month</option>
                                 <option value="01">January</option>
                                 <option value="02">February</option>

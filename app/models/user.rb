@@ -8,10 +8,16 @@
 #  password_digest :string           not null
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
+#  username        :string           not null
+#  dob             :date             not null
+#  gender          :string           not null
 #
 class User < ApplicationRecord
     validates :email, presence: true, uniqueness: true
     validates :session_token, presence: true, uniqueness: true
+    validates :username, presence: true, uniqueness: true
+    validates :gender, inclusion: { in: [ "Male", "Female", "Non-Binary" ] }
+    validates :dob, presence: true
     validates :password_digest, presence: true
     validates :password, length: { minimum: 6 }, allow_nil: true
     

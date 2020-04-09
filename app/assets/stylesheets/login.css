@@ -66,6 +66,7 @@
     margin-top: 20px;
     font-size: 14px;
     opacity: .8;
+    text-indent: 10px;
 }
 
 .password-input {
@@ -75,6 +76,7 @@
     margin-top: 20px;
     font-size: 14px;
     opacity: .8;
+    text-indent: 10px;
 }
 
 .forgot {
@@ -162,7 +164,7 @@
     filter: brightness(115%);
 }
 
-.signup-button {
+.signup-button-redirect {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -182,7 +184,7 @@
     background-color: white;
 }
 
-.signup-button:hover {
+.signup-button-redirect:hover {
     background-color: gray;
     color: white;
 }

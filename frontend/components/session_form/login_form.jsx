@@ -38,12 +38,14 @@ class LoginForm extends React.Component {
                         <h3 className="or"><span className="or-span">OR</span></h3>
                     </div>
                     <form className="login-form" onSubmit={this.handleSubmit}>
-                        <input className="email-input" type="text"
+                        <input className="email-input" 
+                        type="text"
                         value={this.state.email}
                         placeholder="Email"
                         onChange={this.update('email')}
                         />
-                        <input className="password-input" type="password"
+                        <input className="password-input" 
+                        type="password"
                         value={this.state.password}
                         placeholder="Password"
                         onChange={this.update('password')}

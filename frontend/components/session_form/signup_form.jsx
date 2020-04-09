@@ -19,6 +19,12 @@ class SignupForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault()
+
+        if (this.state.day.length < 2) {
+            this.state.day = `0${this.state.day}`
+        }
+
+        this.state.dob = `${this.state.year}-${this.state.month}-${this.state.day}`
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
     }
@@ -69,15 +75,44 @@ class SignupForm extends React.Component {
                         className="signup-username"
                         />
 
-                        <div className="dob-container">
-                                <h3 className="date-label">Date of birth</h3>
-                                <input type="date"
-                                className="date"
-                                value={this.state.dob}
-                                onChange={this.update('dob')}
-                            /> 
-                        </div>
-                            
+                        
+                        <h3 className="date-label">Date of birth</h3>
+                        <div className="date-container">
+                            <select value={this.state.month} onChange={this.update('month')}>
+                                <option value="selected">Month</option>
+                                <option value="01">January</option>
+                                <option value="02">February</option>
+                                <option value="03">March</option>
+                                <option value="04">April</option>
+                                <option value="05">May</option>
+                                <option value="06">June</option>
+                                <option value="07">July</option>
+                                <option value="08">August</option>
+                                <option value="09">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                
+                            <input type="number"
+                            className="day"
+                            placeholder="Day"
+                            min="01"
+                            max="31"
+                            value={this.state.day}
+                            onChange={this.update('day')}
+                            />
+                           
+                            <input type="number"
+                            className="year"
+                            placeholder="Year"
+                            min="1900"
+                            max="2020"
+                            value={this.state.year}
+                            onChange={this.update('year')}
+                            />
+                       </div>
+  
                         <div className="gender-container">
                             <span className="male">
                                 <input type="radio"

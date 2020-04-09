@@ -9,12 +9,19 @@ class LoginForm extends React.Component {
         }
         
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemo = this.handleDemo.bind(this);
     }
 
     handleSubmit(e) {
         e.preventDefault()
         const user = Object.assign({}, this.state);
         this.props.processForm(user)
+    }
+
+    handleDemo(e) {
+        e.preventDefault()
+        const demo_user = {email: 'demouser@demo.com', password: 'password'}
+        this.props.processForm(demo_user)
     }
 
     update(field) {
@@ -57,6 +64,7 @@ class LoginForm extends React.Component {
 
                     <h2 className="no-account">Don't have an account?</h2>
                     {this.props.navLink}
+                    <button onClick={this.handleDemo} className="demo">DEMO USER</button>
                 </div>
                 
             </>

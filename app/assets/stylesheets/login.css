@@ -189,3 +189,29 @@
     color: white;
 }
 
+.demo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 500px;
+    width: 450px;
+    cursor: pointer;
+    border: .2px solid black;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    padding: 8px 0 8px 0;
+    margin-top: 20px;
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: all .4s;
+}
+
+.demo:hover {
+    filter: brightness(115%);
+    /* background-color: white; */
+    color: black;
+    background-color: darkgray;
+    /* border: 2px solid black; */
+}

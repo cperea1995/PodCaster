@@ -10,10 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_08_155654) do
+ActiveRecord::Schema.define(version: 2020_04_09_202424) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "episodes", force: :cascade do |t|
+    t.string "episode_name", null: false
+    t.integer "podcast_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["episode_name"], name: "index_episodes_on_episode_name"
+  end
+
+  create_table "podcasts", force: :cascade do |t|
+    t.string "podcast_name", null: false
+    t.integer "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["podcast_name"], name: "index_podcasts_on_podcast_name"
+  end
+
+  create_table "subscriptions", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "podcast_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", null: false

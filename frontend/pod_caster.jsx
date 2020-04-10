@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import * as SessionUtil from './util/session/session_api_util'
-import * as PodcastUtil from './util/podcast_api_util'
+// import * as PodcastUtil from './util/podcast_api_util'
+import { getPodcasts } from './actions/podcast_actions'
 import configureStore from './store/store';
 import Root from './root';
 import {login, logout} from './actions/session_actions'
@@ -28,8 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     window.logout = logout;
     window.getState = store.getState;
     window.dispatch = store.dispatch;
-    window.getPodcasts = PodcastUtil.getPodcasts;
-    window.getPodcast = PodcastUtil.getPodcast;
+    // window.getPodcasts = PodcastUtil.getPodcasts;
+    // window.getPodcast = PodcastUtil.getPodcast;
+    window.getPodcasts = getPodcasts;
     // window.signUp = SessionUtil.signUp;
     // window.login = SessionUtil.login;
     // window.logout = SessionUtil.logout;

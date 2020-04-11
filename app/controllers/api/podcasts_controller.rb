@@ -24,9 +24,6 @@ class Api::PodcastsController < ApplicationController
         end
     end
 
-    def delete
-    end
-
     private
 
     def podcast_params

@@ -1896,3 +1896,58 @@ Migrating to CreateSubscriptions (20200409202424)
   [1m[36mPodcast Create (4.8ms)[0m  [1m[32mINSERT INTO "podcasts" ("podcast_name", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["podcast_name", "joe rogan podcast"], ["user_id", 9], ["created_at", "2020-04-10 02:50:18.754447"], ["updated_at", "2020-04-10 02:50:18.754447"]]
   [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mPodcast Load (0.6ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6849430619018728755)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateActiveStorageTables (20200410143224)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (92.7ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" bigserial primary key, "key" character varying NOT NULL, "filename" character varying NOT NULL, "content_type" character varying, "metadata" text, "byte_size" bigint NOT NULL, "checksum" character varying NOT NULL, "created_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200410143224_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (33.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_blobs_on_key" ON "active_storage_blobs"  ("key")[0m
+  ↳ db/migrate/20200410143224_create_active_storage_tables.active_storage.rb:4
+  [1m[35m (47.0ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" bigserial primary key, "name" character varying NOT NULL, "record_type" character varying NOT NULL, "record_id" bigint NOT NULL, "blob_id" bigint NOT NULL, "created_at" timestamp NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  ↳ db/migrate/20200410143224_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments"  ("blob_id")[0m
+  ↳ db/migrate/20200410143224_create_active_storage_tables.active_storage.rb:16
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_active_storage_attachments_uniqueness" ON "active_storage_attachments"  ("record_type", "record_id", "name", "blob_id")[0m
+  ↳ db/migrate/20200410143224_create_active_storage_tables.active_storage.rb:16
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200410143224"]]
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6849430619018728755)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mPodcast Load (6.7ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  [1m[36mPodcast Load (2.4ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mActiveStorage::Attachment Load (5.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 1], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+[36m  S3 Storage (255.2ms) [0m[32mUploaded file to key: RvT5LqNBuHsGGVH8zxfUNDL6 (checksum: cOZZqdFWMmFpTAWX2jb/fA==)[0m
+  [1m[35m (18.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Blob Create (6.9ms)[0m  [1m[32mINSERT INTO "active_storage_blobs" ("key", "filename", "content_type", "metadata", "byte_size", "checksum", "created_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["key", "RvT5LqNBuHsGGVH8zxfUNDL6"], ["filename", "joerogan.jpeg"], ["content_type", "image/jpeg"], ["metadata", "{\"identified\":true}"], ["byte_size", 16329], ["checksum", "cOZZqdFWMmFpTAWX2jb/fA=="], ["created_at", "2020-04-10 18:44:02.274818"]]
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveStorage::Attachment Create (39.2ms)[0m  [1m[32mINSERT INTO "active_storage_attachments" ("name", "record_type", "record_id", "blob_id", "created_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "podcast_art"], ["record_type", "Podcast"], ["record_id", 1], ["blob_id", 1], ["created_at", "2020-04-10 18:44:02.343378"]]
+  [1m[36mPodcast Update (0.6ms)[0m  [1m[33mUPDATE "podcasts" SET "updated_at" = $1 WHERE "podcasts"."id" = $2[0m  [["updated_at", "2020-04-10 18:44:02.385265"], ["id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 2c9abe61-6490-45f0-b925-49a90df98bc5) to Async(default) with arguments: #<GlobalID:0x00007fc36420c860 @uri=#<URI::GID gid://pod-caster/ActiveStorage::Blob/1>>
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5] Performing ActiveStorage::AnalyzeJob (Job ID: 2c9abe61-6490-45f0-b925-49a90df98bc5) from Async(default) with arguments: #<GlobalID:0x00007fc3622925c0 @uri=#<URI::GID gid://pod-caster/ActiveStorage::Blob/1>>
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5] [36m  S3 Storage (172.4ms) [0m[34mDownloaded file from key: RvT5LqNBuHsGGVH8zxfUNDL6[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5] Skipping image analysis because the mini_magick gem isn't installed
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5]   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5]   [1m[36mActiveStorage::Blob Update (0.7ms)[0m  [1m[33mUPDATE "active_storage_blobs" SET "metadata" = $1 WHERE "active_storage_blobs"."id" = $2[0m  [["metadata", "{\"identified\":true,\"analyzed\":true}"], ["id", 1]]
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5]   [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+[ActiveJob] [ActiveStorage::AnalyzeJob] [2c9abe61-6490-45f0-b925-49a90df98bc5] Performed ActiveStorage::AnalyzeJob (Job ID: 2c9abe61-6490-45f0-b925-49a90df98bc5) from Async(default) in 275.09ms
+  [1m[36mPodcast Load (0.7ms)[0m  [1m[34mSELECT  "podcasts".* FROM "podcasts" ORDER BY "podcasts"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]

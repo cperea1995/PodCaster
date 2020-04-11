@@ -18,9 +18,9 @@ const receivePodcast = (podcast) => {
 };
 
 export const getPodcasts = () => dispatch => {
-    return PodcastUtil.getPodcasts().then( podcasts => dispatch(receivePodcasts(podcasts)));
+    return PodcastUtil.getPodcasts().then( podcasts => dispatch(receivePodcasts(podcasts)), (err) => console.log(err.responseJSON));
 };
 
 export const getPodcast = (podcastId) => dispatch => {
-    return PodcastUtil.getPodcast().then( podcast => dispatch(receivePodcast(podcast)));
+    return PodcastUtil.getPodcast(podcastId).then( podcast => dispatch(receivePodcast(podcast)));
 };

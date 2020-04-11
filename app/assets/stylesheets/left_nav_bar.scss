@@ -1,0 +1,38 @@
+// .left-nav-container {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     background-color: black;
+//     // width: 12%;
+//     width: 230px;
+//     height: 100%;
+// }
+
+.left-nav-container {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    height: 100%; 
+    width: 230px; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    padding-top: 60px; /* Place content 60px from the top */
+}
+
+.home-button {
+    color: white;
+    text-decoration: none;
+}
+
+.search-button {
+    color: white;
+    text-decoration: none;
+}
+
+.podcasts-button {
+    color: white;
+    text-decoration: none;
+}

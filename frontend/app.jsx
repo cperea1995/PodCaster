@@ -4,13 +4,15 @@ import { Route } from 'react-router-dom';
 import LoginFormContainer from './components/session_form/login_form_container';
 import SignupFormContainer from './components/session_form/signup_form_container';
 import PodcastIndexContainer from './components/main_page/podcast_index/podcast_index_container';
+import MainPage from './components/main_page/main_page';
 import {AuthRoute, ProtectedRoute} from './util/route_util';
 
 const App = () => {
     return (
         <>
             <header>
-                <Route exact path="/" component={HeaderContainer} />
+                {/* <Route exact path="/" component={HeaderContainer} /> */}
+                <Route exact path="/" component={MainPage} />
             </header>
 
             <AuthRoute path="/login" component={LoginFormContainer}/>

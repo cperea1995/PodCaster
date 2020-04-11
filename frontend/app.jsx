@@ -3,7 +3,8 @@ import HeaderContainer from './components/header/header_container';
 import { Route } from 'react-router-dom';
 import LoginFormContainer from './components/session_form/login_form_container';
 import SignupFormContainer from './components/session_form/signup_form_container';
-import {AuthRoute} from './util/route_util';
+import PodcastIndexContainer from './components/main_page/podcast_index/podcast_index_container';
+import {AuthRoute, ProtectedRoute} from './util/route_util';
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
 
             <AuthRoute path="/login" component={LoginFormContainer}/>
             <AuthRoute path="/signup" component={SignupFormContainer}/>
+            <ProtectedRoute path="/podcasts" component={PodcastIndexContainer}/>
         </>
     );
 };

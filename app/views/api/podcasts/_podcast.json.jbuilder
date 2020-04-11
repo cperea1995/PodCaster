@@ -1,0 +1,1 @@
+json.extract! podcast, :id, :podcast_name

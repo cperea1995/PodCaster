@@ -50,6 +50,11 @@
     align-items: center;
     height: 60px;
     background-color: #191414;
+    // overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // margin-bottom: 34px;
     /* background-color: black; */
 }
 

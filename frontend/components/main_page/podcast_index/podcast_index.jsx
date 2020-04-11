@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderContainer from '../../header/header_container'
+import PodcastIndexItem from './podcast_index_item';
 
 class PodcastIndex extends React.Component {
     constructor(props) {
@@ -17,18 +18,26 @@ class PodcastIndex extends React.Component {
                 </>
             );
         };
+
+        const podcasts = this.props.podcasts.map( podcast => {
+            return <PodcastIndexItem podcastName={podcast.podcast_name} key={podcast.id}/>
+        })
         
         return (
             <>
-                <HeaderContainer />
-                <h1>Podcast Index Page</h1>
-
-                <ul>
-                    <li>{this.props.podcasts[0].id}</li>
-                </ul>
+                <div className="page">
+                    <HeaderContainer />
+                    <h1 className="podcast-header" >Podcasts</h1>
+    
+                    <ul>
+                        <li className="contained">{podcasts}</li>
+                    </ul>
+                </div>
             </>
         );
     }
 };
 
 export default PodcastIndex;
+
+// { this.props.podcasts[0].id }

@@ -1,0 +1,108 @@
+// .left-nav-container {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     background-color: black;
+//     // width: 12%;
+//     width: 230px;
+//     height: 100%;
+// }
+
+.left-nav-container {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    height: 100%; 
+    width: 230px; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: black; /* Black*/
+    // padding-top: 60px; /* Place content 60px from the top */
+}
+
+.left-nav-logo {
+//     display: block;
+// margin: 20px auto 20px;
+// height: 20px;
+// width: 20px;
+// border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 37%;
+}
+
+.home-button {
+    color: #d9dadc;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    height: 40px;
+    width: 215px;
+    padding-left: 8px;
+    // background-color: black;
+    transition: all .4s;
+}
+
+.home-button:hover {
+    filter: brightness(125%);
+    // background-color: blue;
+}
+
+.search-button {
+    color: #d9dadc;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    width: 215px;
+    padding-left: 8px;
+    background-color: black;
+    transition: all .4s;
+}
+
+.search-button:hover {
+    filter: brightness(125%);
+    // background-color: blue;
+}
+
+.podcasts-button {
+    color: #d9dadc;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    height: 40px;
+    width: 215px;
+    padding-left: 8px;
+    background-color: black;
+    transition: all .4s;
+}
+
+.podcasts-button:hover {
+    filter: brightness(125%);
+    // background-color: blue;
+}
+
+// .podcasts-button:focus {
+//     background-color: gray;
+// }
+
+.fa-podcast {
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.fa-home {
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 20px;
+}
+
+.fa-search {
+    padding-left: 20px;
+    padding-right: 15px;
+    font-size: 20px;
+}

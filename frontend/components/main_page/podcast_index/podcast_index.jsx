@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderContainer from '../../header/header_container'
 import PodcastIndexItem from './podcast_index_item';
+import LeftNavBar from '../left_nav_bar/left_nav_bar'
 
 class PodcastIndex extends React.Component {
     constructor(props) {
@@ -27,12 +28,14 @@ class PodcastIndex extends React.Component {
             <>
                 <div className="page">
                     <HeaderContainer />
+            
                     <h1 className="podcast-header" >Podcasts</h1>
     
-                    <ul>
+                    <ul className="index-content-container" >
                         <li className="contained">{podcasts}</li>
                     </ul>
                 </div>
+                <LeftNavBar />
             </>
         );
     }

@@ -28,9 +28,10 @@ class PodcastIndex extends React.Component {
             <>
                 <div className="page">
                     <HeaderContainer />
+            
                     <h1 className="podcast-header" >Podcasts</h1>
     
-                    <ul>
+                    <ul className="index-content-container" >
                         <li className="contained">{podcasts}</li>
                     </ul>
                 </div>

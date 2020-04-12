@@ -10,9 +10,10 @@ class LeftNavBar extends React.Component {
         return (
             <>
                <div className="left-nav-container">
-                    <Link className="home-button" to="/">Home</Link>
-                    <Link className="search-button" to="/search">Search</Link>
-                    <Link className="podcasts-button" to="/podcasts">Podcasts</Link>
+                   <img className="left-nav-logo" src={window.whiteLogo} alt="podcaster-logo"/>
+                    <Link className="home-button" to="/"><i className="fas fa-home"></i>Home</Link>
+                    <Link className="search-button" to="/search"><i className="fas fa-search"></i>Search</Link>
+                    <Link className="podcasts-button" to="/podcasts"><i className="fas fa-podcast"></i>Podcasts</Link>
                </div>
             </>
         );

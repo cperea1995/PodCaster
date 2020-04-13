@@ -15,9 +15,10 @@ class PodcastShow extends React.Component {
 
         return (
             <>
+                <LeftNavBar /> 
                 <HeaderContainer /> 
-                <LeftNavBar />
                 <div className="showpage-content">
+                    
                     <div className="superflex">
                         <div className="podcast-art-episode-container">
                             <div className="podcast-art">Podcast Art</div>
@@ -35,11 +36,12 @@ class PodcastShow extends React.Component {
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
+                            <li className="episode"><i className="fas fa-music"></i>episodes</li>         
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
+                            <li className="episode"><i className="fas fa-music"></i>episodes</li>         
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                     
+                            <li className="episode"><i className="fas fa-music"></i>episodes</li>         
+                            <li className="episode"><i className="fas fa-music"></i>episodes</li>         
                         </ul>
                     </div>
                 </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderContainer from '../../header/header_container'
 import PodcastIndexItem from './podcast_index_item';
 import LeftNavBar from '../left_nav_bar/left_nav_bar'
+import { Link } from 'react-router-dom'
 
 class PodcastIndex extends React.Component {
     constructor(props) {
@@ -21,7 +22,7 @@ class PodcastIndex extends React.Component {
         };
 
         const podcasts = this.props.podcasts.map( podcast => {
-            return <PodcastIndexItem podcastName={podcast.podcast_name} key={podcast.id}/>
+            return <PodcastIndexItem podcastId={podcast.id} podcastName={podcast.podcast_name} key={podcast.id}/>
         })
         
         return (
@@ -29,7 +30,7 @@ class PodcastIndex extends React.Component {
                 <div className="page">
                     <HeaderContainer />
             
-                    <h1 className="podcast-header" >Podcasts</h1>
+                    <h1 className="podcast-header">Podcasts</h1>
     
                     <ul className="index-content-container" >
                         <li className="contained">{podcasts}</li>

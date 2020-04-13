@@ -9,8 +9,10 @@
     // height: 100%;
     // display: flex;
     // background-color: lightgray;
-    margin-left: 230px;
-    margin-top: 60px;
+    // margin-left: 230px;
+    // margin-top: 60px;
+    margin-left: 12%;
+    margin-top: 3%
     // position: absolute;
     // top: 0;
     // left: 0;
@@ -20,25 +22,32 @@
 }
 
 .podcast-art {
-    display: block;
+    // display: block;
     min-width: 320px;
     min-height: 320px;
     max-width: 320px;
     max-height: 320px;
+    // min-height: 19.5%;
     background-color: red;
-    margin-left: 148px;
-    margin-top: 27px;
+    // margin-left: 148px;
+    margin-left: 32%;
+    // margin-top: 27px;
+    margin-top: 6%;
 }
 
 .episodes-list {
-    margin-left: 115px;
-    margin-top: 25px;
+    // margin-left: 115px;
+    margin-left: 7%;
+    // margin-top: 25px;
+    margin-top: 1.5%;
     list-style-type: none;
 }
 
 .episode {
-    height: 65px;
-    width: 1048px;
+    // height: 65px;
+    height: 4.0625em;
+    // width: 1048px;
+    width: 65.5em;
     color: white;
     font-family: 'Montserrat', sans-serif;
     background-color: transparent;
@@ -54,10 +63,15 @@
     // opacity: 10%;
 }
 
+
+
 .fa-music {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 15px;
+    // padding-right: 15px;
+    padding-right: 0.9375em;
+    // padding-left: 15px;
+    padding-left: 0.9375em;
+    // padding-top: 15px;
+    padding-top: 0.9375em;
     color: #d9dadc;
     opacity: 63%;
 }
@@ -80,10 +94,13 @@
     flex-direction: column;
     // justify-content: center;
     align-items: center;
-    width: 320px; 
+    // width: 320px;
+    width: 20em; 
     height: auto; 
-    margin-left: 148px;
-    margin-top: 15px;
+    // margin-left: 148px;
+    margin-left: 9.25em;
+    // margin-top: 15px;
+    margin-top: 0.9375em;
 }
 
 .podcast-name {
@@ -105,19 +122,23 @@
 }
 
 .show-play-button {
-    margin-top: 32px;
+    // margin-top: 32px;
+    margin-top: 2em;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-radius: 500px;
-    width: 110px;
+    // width: 110px;
+    width: 6.875em;
     cursor: pointer;
     border: .2px solid black;
     font-size: 14px;
     text-decoration: none;
     color: white;
-    padding: 8px 0 8px 0;
-    margin-top: 35px;
+    // padding: 8px 0 8px 0;
+    padding: .5em 0 .5em 0;
+    // margin-top: 35px;
+    margin-top: 2.1875em;
     background-color: #1DB954;
     font-family: 'Montserrat', sans-serif;
     outline: none;

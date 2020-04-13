@@ -39,22 +39,7 @@ class PodcastShow extends React.Component {
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
                             <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
-                            <li className="episode"><i className="fas fa-music"></i>episodes</li>
+                     
                         </ul>
                     </div>
                 </div>

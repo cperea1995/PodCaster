@@ -28,7 +28,8 @@
 
 .fa-fire {
     font-size: 55px;
-    padding-bottom: 45px;
+    // padding-bottom: 45px;
+    margin-top: 44px;
 }
 
 .tester {
@@ -51,10 +52,52 @@
 
 .genre-text {
     position: relative;
-    top: -107px;
-    padding-right: 40px;
+    top: 11px;
+    // padding-right: 40px;
+    width: 135px;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
+    text-align: left;
+}
+
+.education {
+   background-image: image-url("education.jpg");
+   color: transparent
+}
+
+.entertainment {
+    background-image: image-url("entertainment.jpg");
+    color: transparent
+}
+
+.diy {
+    background-image: image-url("diy.jpg");
+    color: transparent 
+}
+
+.sports {
+    background-image: image-url("sports.jpg");
+    color: transparent 
+}
+
+.comedy {
+    background-image: image-url("comedy.jpg");
+    color: transparent 
+}
+
+.technology {
+    background-image: image-url("technology.jpg");
+    color: transparent 
+}
+
+.joerogan {
+    background-image: image-url("joerogan.jpg");
+    color: transparent 
+}
+
+.conan {
+    background-image: image-url("conan.jpg");
+    color: transparent 
 }
 

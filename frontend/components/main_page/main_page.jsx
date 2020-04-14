@@ -22,7 +22,12 @@ class MainPage extends React.Component {
 
                         <li className="contained">
                             <div className="podcast-container">
-                                Liked Podcasts
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                </div>
+                                <div className="liked-text">Liked Podcasts</div>
                             </div>
                         </li>
 
@@ -34,27 +39,57 @@ class MainPage extends React.Component {
                         
                         <li className="contained">
                             <div className="podcast-container">
-                                Genres
+                                 <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
 
                             <div className="podcast-container">
-                                Genres
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Genres
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Genres
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Genres
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                            
                             <div className="podcast-container">
-                                Genres
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                         </li>
 
@@ -66,27 +101,57 @@ class MainPage extends React.Component {
                         
                         <li className="contained">
                             <div className="podcast-container">
-                                Popular
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Popular
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Popular
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Popular
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Popular
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Popular
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                         </li>
 
@@ -98,27 +163,57 @@ class MainPage extends React.Component {
                        
                         <li className="contained">
                             <div className="podcast-container">
-                                Mood
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Mood
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Mood
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Mood
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Mood
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                             <div className="podcast-container">
-                                Mood
+                                <div className="tester">
+                                    <div className="square">
+                                        <i className="fas fa-fire "></i>
+                                    </div>
+                                    <div className="genre-text">Liked Podcasts</div>
+                                </div>
                             </div>
                             
                         </li>

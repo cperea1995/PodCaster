@@ -12,5 +12,49 @@
 }
 
 .category-info {
-    font-size: 14px;
+    font-size: 12px;
+    color: #d9dadc;
+    opacity: 63%;
 }
+
+.square {
+    height: 135px;
+    width: 135px;
+    background-image: linear-gradient(to bottom right, rgb(6, 119, 248), rgb(186, 198, 209));
+    // margin-left: auto;
+    // margin-right: auto;
+    margin-top: 20px;
+}
+
+.fa-fire {
+    font-size: 55px;
+    padding-bottom: 45px;
+}
+
+.tester {
+    height: 240px;
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.liked-text {
+    position: relative;
+    top: -191px;
+    text-align: left;
+    padding-left: 16px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+.genre-text {
+    position: relative;
+    top: -107px;
+    padding-right: 40px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+

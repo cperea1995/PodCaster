@@ -8,10 +8,19 @@ class PodcastShow extends React.Component {
     }
 
     componentDidMount() {
+        debugger
         this.props.getPodcast(this.props.match.params.podcastId);
     }
 
     render() {
+        debugger
+
+        if (typeof this.props.podcast === "undefined") {
+            return (
+                <>
+                </>
+            );
+        };
 
         return (
             <>
@@ -23,7 +32,7 @@ class PodcastShow extends React.Component {
                         <div className="podcast-art-episode-container">
                             <div className="podcast-art">Podcast Art</div>
                             <div className="podcast-info">
-                                <h1 className="podcast-name">Podcast Name</h1>
+                                <h1 className="podcast-name">{this.props.podcast.podcast_name}</h1>
                                 <h3 className="caster-name">Caster Name</h3>
                                 <button className="show-play-button">Play</button>
                                 <span className="heartdot-container"><i className="far fa-heart"></i><i className="fas fa-ellipsis-h"></i></span>

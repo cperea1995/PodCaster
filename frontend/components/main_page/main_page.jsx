@@ -162,7 +162,7 @@ class MainPage extends React.Component {
                             <span className="category-info">Podcasts for your mood</span>
                         </div>
                        
-                        <li className="contained">
+                        <li className="bottom-contained">
                             <div className="podcast-container">
                                 <div className="tester">
                                     <div className="square sad">

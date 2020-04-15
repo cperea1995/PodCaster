@@ -5,7 +5,14 @@ const PodcastIndexItem = (props) => {
     return (
         <>
             <div className="podcast-container">
-                <Link className="showpage-link" to={`/podcasts/${props.podcastId}`}><h1 className="podcast">{props.podcastName}</h1></Link>
+                <Link className="showpage-link" to={`/podcasts/${props.podcastId}`}>
+                    <div className="tester">
+                        <div className="square">
+                            <i className="fas fa-fire "></i>
+                        </div>
+                        <div className="genre-text">{props.podcastName}</div>
+                    </div>
+                </Link>
             </div>
         </>
     );

@@ -33,7 +33,7 @@ class PodcastIndex extends React.Component {
                     <h1 className="podcast-header">Podcasts</h1>
     
                     <ul className="index-content-container" >
-                        <li className="contained">{podcasts}</li>
+                        <li className="bottom-contained">{podcasts}</li>
                     </ul>
                 </div>
                 <LeftNavBar />

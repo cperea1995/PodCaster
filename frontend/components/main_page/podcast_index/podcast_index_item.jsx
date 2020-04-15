@@ -7,9 +7,9 @@ const PodcastIndexItem = (props) => {
             <div className="podcast-container">
                 <Link className="showpage-link" to={`/podcasts/${props.podcastId}`}>
                     <div className="tester">
-                        <div className="square">
-                            <i className="fas fa-fire "></i>
-                        </div>
+                        
+                        <img className="square" src={props.podcastArt} alt="" />
+                        
                         <div className="genre-text">{props.podcastName}</div>
                     </div>
                 </Link>

@@ -6,6 +6,7 @@ import { getPodcasts } from './actions/podcast_actions'
 import configureStore from './store/store';
 import Root from './root';
 import {login, logout} from './actions/session_actions'
+import { persistStore } from 'redux-persist';
 
 
 document.addEventListener('DOMContentLoaded', () => {

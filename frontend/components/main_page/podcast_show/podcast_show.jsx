@@ -8,12 +8,10 @@ class PodcastShow extends React.Component {
     }
 
     componentDidMount() {
-        debugger
         this.props.getPodcast(this.props.match.params.podcastId);
     }
 
     render() {
-        debugger
 
         if (typeof this.props.podcast === "undefined") {
             return (

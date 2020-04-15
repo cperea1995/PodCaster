@@ -28,7 +28,7 @@ class PodcastShow extends React.Component {
                     
                     <div className="superflex">
                         <div className="podcast-art-episode-container">
-                            <div className="podcast-art">Podcast Art</div>
+                            <div><img className="podcast-art" src={this.props.podcast.photoUrl} alt=""/></div>
                             <div className="podcast-info">
                                 <h1 className="podcast-name">{this.props.podcast.podcast_name}</h1>
                                 <h3 className="caster-name">Caster Name</h3>

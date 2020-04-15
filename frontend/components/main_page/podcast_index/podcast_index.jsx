@@ -10,10 +10,12 @@ class PodcastIndex extends React.Component {
     }
 
     componentDidMount() {
+        debugger
         this.props.getPodcasts();
     }
     
     render() {
+        debugger
         if (this.props.podcasts.length === 0) {
             return (
                 <>
@@ -22,7 +24,7 @@ class PodcastIndex extends React.Component {
         };
 
         const podcasts = this.props.podcasts.map( podcast => {
-            return <PodcastIndexItem podcastId={podcast.id} podcastName={podcast.podcast_name} key={podcast.id}/>
+            return <PodcastIndexItem podcastId={podcast.id} podcastName={podcast.podcast_name} podcastArt={podcast.photoUrl} key={podcast.id}/>
         })
         
         return (

@@ -7,6 +7,7 @@ import PodcastIndexContainer from './components/main_page/podcast_index/podcast_
 import PodcastShowContainer from './components/main_page/podcast_show/podcast_show_container';
 import MainPage from './components/main_page/main_page';
 import {AuthRoute, ProtectedRoute} from './util/route_util';
+import Footer from './components/media_player_footer/media_player_footer';
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
                 <ProtectedRoute exact path="/podcasts" component={PodcastIndexContainer}/>
                 <ProtectedRoute path="/podcasts/:podcastId" component={PodcastShowContainer} />
             </Switch>
+            <ProtectedRoute path="/" component={Footer} />
         </>
     );
 };

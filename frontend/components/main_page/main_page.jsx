@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderContainer from '../header/header_container';
 import LeftNavBar from './left_nav_bar/left_nav_bar';
+import Footer from '../media_player_footer/media_player_footer';
 
 class MainPage extends React.Component {
     constructor(props) {

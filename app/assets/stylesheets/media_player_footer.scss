@@ -1,0 +1,101 @@
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background-color: #191414;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    border-top: 1px solid black;
+}
+
+.fa-random {
+    color: #d9dadc;
+    font-size: 15px;
+}
+
+.fa-random:hover {
+    filter: brightness(150%);
+    transition: .1s;
+}
+
+.fa-step-backward {
+    color: #d9dadc;
+    font-size: 15px;
+    padding-left: 35px;
+}
+
+.fa-step-backward:hover {
+    filter: brightness(150%);
+    transition: .1s;
+}
+
+.fa-play-circle {
+    color: #d9dadc;
+    font-size: 33px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.fa-play-circle:hover {
+    transform: scale(1.1);
+    filter: brightness(150%);
+    transition: .1s;
+}
+
+.fa-step-forward {
+    color: #d9dadc;
+    font-size: 15px;
+    padding-right: 35px;
+}
+
+.fa-step-forward:hover {
+    filter: brightness(150%);
+    transition: .1s;
+}
+
+.fa-retweet {
+    color: #d9dadc;
+    font-size: 15px;
+}
+
+.fa-retweet:hover {
+    filter: brightness(150%);
+    transition: .1s;
+}
+
+.shuffle,
+.backward,
+.play,
+.forward,
+.replay {
+    background: none;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

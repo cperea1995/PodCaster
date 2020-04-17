@@ -17,4 +17,8 @@ class Podcast < ApplicationRecord
         class_name: :User
 
     has_one_attached :podcast_art
+
+    has_many :episodes,
+        foreign_key: :podcast_id,
+        class_name: :Episode
 end

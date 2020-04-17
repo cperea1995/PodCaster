@@ -4,6 +4,7 @@ import { getPodcast } from '../../../actions/podcast_actions';
 
 
 const msp = (state, ownProps) => {
+    debugger
     return {
         podcast: state.podcastParts.podcasts[ownProps.match.params.podcastId]
     };

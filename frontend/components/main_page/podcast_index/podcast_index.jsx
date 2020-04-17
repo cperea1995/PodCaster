@@ -10,15 +10,15 @@ class PodcastIndex extends React.Component {
     }
 
     componentDidMount() {
-        debugger
         this.props.getPodcasts();
     }
     
     render() {
-        debugger
         if (this.props.podcasts.length === 0) {
             return (
                 <>
+                    <LeftNavBar />
+                    <div className="loading"></div>
                 </>
             );
         };

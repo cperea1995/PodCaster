@@ -1,0 +1,1 @@
+json.extract! episode, :id, :episode_name

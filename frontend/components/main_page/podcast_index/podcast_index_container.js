@@ -3,7 +3,6 @@ import PodcastIndex from './podcast_index';
 import { getPodcasts } from '../../../actions/podcast_actions';
 
 const msp = state => {
-    debugger
     return {
         podcasts: Object.values(state.podcastParts.podcasts)
     };

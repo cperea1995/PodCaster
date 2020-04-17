@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderContainer from '../header/header_container';
 import LeftNavBar from './left_nav_bar/left_nav_bar';
 import Footer from '../media_player_footer/media_player_footer';
+import { Link } from 'react-router-dom';
 
 class MainPage extends React.Component {
     constructor(props) {
@@ -22,14 +23,16 @@ class MainPage extends React.Component {
                         </div>
 
                         <li className="contained">
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Liked Podcasts</div>
                                     </div>
-                                    <div className="genre-text">Liked Podcasts</div>
                                 </div>
-                            </div>
+                           </Link>
                         </li>
 
                         <div className="category-header">
@@ -39,59 +42,71 @@ class MainPage extends React.Component {
                         </div>
                         
                         <li className="contained">
-                            <div className="podcast-container">
-                                 <div className="tester">
-                                    <div className="square education">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts">
+                                <div className="podcast-container">
+                                     <div className="tester">
+                                        <div className="square education">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Educational</div>
                                     </div>
-                                    <div className="genre-text">Educational</div>
                                 </div>
-                            </div>
+                           </Link>
 
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square entertainment">
-                                        <i className="fas fa-fire "></i>
+                          <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square entertainment">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Entertainment</div>
                                     </div>
-                                    <div className="genre-text">Entertainment</div>
                                 </div>
-                            </div>
+                          </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square diy">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square diy">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">DIY</div>
                                     </div>
-                                    <div className="genre-text">DIY</div>
                                 </div>
-                            </div>
+                            </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square sports">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square sports">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Sports</div>
                                     </div>
-                                    <div className="genre-text">Sports</div>
                                 </div>
-                            </div>
+                            </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square comedy">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square comedy">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Comedy</div>
                                     </div>
-                                    <div className="genre-text">Comedy</div>
                                 </div>
-                            </div>
+                            </Link>
                            
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square technology">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square technology">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Technology</div>
                                     </div>
-                                    <div className="genre-text">Technology</div>
                                 </div>
-                            </div>
+                            </Link>
                         </li>
 
                         <div className="category-header">
@@ -101,59 +116,71 @@ class MainPage extends React.Component {
                         </div>
                         
                         <li className="contained">
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square joerogan">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts/175">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square joerogan">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">The Joe Rogan Experience</div>
                                     </div>
-                                    <div className="genre-text">The Joe Rogan Experience</div>
                                 </div>
-                            </div>
+                           </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square conan">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="/podcasts/176">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square conan">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Conan O'Brien Needs a Friend</div>
                                     </div>
-                                    <div className="genre-text">Conan O'Brien Needs a Friend</div>
                                 </div>
-                            </div>
+                            </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square h3podcast">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="podcasts/177">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square h3podcast">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">H3 Podcast</div>
                                     </div>
-                                    <div className="genre-text">H3 Podcast</div>
                                 </div>
-                            </div>
+                            </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square vergecast">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="podcasts/178">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square vergecast">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">The Vergecast</div>
                                     </div>
-                                    <div className="genre-text">The Vergecast</div>
                                 </div>
-                            </div>
+                           </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square espndaily">
-                                        <i className="fas fa-fire "></i>
+                          <Link to="podcasts/179">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square espndaily">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">ESPN Daily</div>
                                     </div>
-                                    <div className="genre-text">ESPN Daily</div>
                                 </div>
-                            </div>
+                          </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square notsosmart">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="podcasts/180">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square notsosmart">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">You Are Not So Smart</div>
                                     </div>
-                                    <div className="genre-text">You Are Not So Smart</div>
                                 </div>
-                            </div>
+                            </Link>
                         </li>
 
                         <div className="category-header">
@@ -163,59 +190,71 @@ class MainPage extends React.Component {
                         </div>
                        
                         <li className="bottom-contained">
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square sad">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="https://www.youtube.com/watch?v=4fWyzwo1xg0">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square sad">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Sad</div>
                                     </div>
-                                    <div className="genre-text">Sad</div>
                                 </div>
-                            </div>
+                            </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square happy">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square happy">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Happy</div>
                                     </div>
-                                    <div className="genre-text">Happy</div>
                                 </div>
-                            </div>
+                           </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square relaxed">
-                                        <i className="fas fa-fire "></i>
+                            <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square relaxed">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Relaxed</div>
                                     </div>
-                                    <div className="genre-text">Relaxed</div>
                                 </div>
-                            </div>
+                            </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square bored">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square bored">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Bored</div>
                                     </div>
-                                    <div className="genre-text">Bored</div>
                                 </div>
-                            </div>
+                           </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square sleepy">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square sleepy">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Sleepy</div>
                                     </div>
-                                    <div className="genre-text">Sleepy</div>
                                 </div>
-                            </div>
+                           </Link>
                             
-                            <div className="podcast-container">
-                                <div className="tester">
-                                    <div className="square excited">
-                                        <i className="fas fa-fire "></i>
+                           <Link to="/podcasts">
+                                <div className="podcast-container">
+                                    <div className="tester">
+                                        <div className="square excited">
+                                            <i className="fas fa-fire "></i>
+                                        </div>
+                                        <div className="genre-text">Excited</div>
                                     </div>
-                                    <div className="genre-text">Excited</div>
                                 </div>
-                            </div>
+                           </Link>
                             
                         </li>
                     </ul>

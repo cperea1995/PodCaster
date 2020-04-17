@@ -6,6 +6,7 @@ import SignupFormContainer from './components/session_form/signup_form_container
 import PodcastIndexContainer from './components/main_page/podcast_index/podcast_index_container';
 import PodcastShowContainer from './components/main_page/podcast_show/podcast_show_container';
 import MainPage from './components/main_page/main_page';
+import MainPageContainer from './components/main_page/main_page_container';
 import {AuthRoute, ProtectedRoute} from './util/route_util';
 import Footer from './components/media_player_footer/media_player_footer';
 
@@ -14,7 +15,7 @@ const App = () => {
         <>
             <header>
                 {/* <Route exact path="/" component={HeaderContainer} /> */}
-                <Route exact path="/" component={MainPage} />
+                <Route exact path="/" component={MainPageContainer} />
             </header>
             
             <Switch>

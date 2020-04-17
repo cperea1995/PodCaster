@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderContainer from '../header/header_container';
 import LeftNavBar from './left_nav_bar/left_nav_bar';
-import Footer from '../media_player_footer/media_player_footer';
+import PodcastIndexItem from './podcast_index/podcast_index_item'
 import { Link } from 'react-router-dom';
 
 class MainPage extends React.Component {
@@ -9,7 +9,18 @@ class MainPage extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        debugger
+        this.props.getPodcasts();
+    }
+
     render() {
+        debugger
+
+        const podcasts = this.props.podcasts.map( podcast => {
+            return <PodcastIndexItem podcastId={podcast.id} podcastName={podcast.podcast_name} podcastArt={podcast.photoUrl} key={podcast.id} />
+        })
+
         return (
             <>
                 <div className="page">
@@ -116,71 +127,7 @@ class MainPage extends React.Component {
                         </div>
                         
                         <li className="contained">
-                           <Link to="/podcasts/175">
-                                <div className="podcast-container">
-                                    <div className="tester">
-                                        <div className="square joerogan">
-                                            <i className="fas fa-fire "></i>
-                                        </div>
-                                        <div className="genre-text">The Joe Rogan Experience</div>
-                                    </div>
-                                </div>
-                           </Link>
-                            
-                            <Link to="/podcasts/176">
-                                <div className="podcast-container">
-                                    <div className="tester">
-                                        <div className="square conan">
-                                            <i className="fas fa-fire "></i>
-                                        </div>
-                                        <div className="genre-text">Conan O'Brien Needs a Friend</div>
-                                    </div>
-                                </div>
-                            </Link>
-                            
-                            <Link to="podcasts/177">
-                                <div className="podcast-container">
-                                    <div className="tester">
-                                        <div className="square h3podcast">
-                                            <i className="fas fa-fire "></i>
-                                        </div>
-                                        <div className="genre-text">H3 Podcast</div>
-                                    </div>
-                                </div>
-                            </Link>
-                            
-                           <Link to="podcasts/178">
-                                <div className="podcast-container">
-                                    <div className="tester">
-                                        <div className="square vergecast">
-                                            <i className="fas fa-fire "></i>
-                                        </div>
-                                        <div className="genre-text">The Vergecast</div>
-                                    </div>
-                                </div>
-                           </Link>
-                            
-                          <Link to="podcasts/179">
-                                <div className="podcast-container">
-                                    <div className="tester">
-                                        <div className="square espndaily">
-                                            <i className="fas fa-fire "></i>
-                                        </div>
-                                        <div className="genre-text">ESPN Daily</div>
-                                    </div>
-                                </div>
-                          </Link>
-                            
-                            <Link to="podcasts/180">
-                                <div className="podcast-container">
-                                    <div className="tester">
-                                        <div className="square notsosmart">
-                                            <i className="fas fa-fire "></i>
-                                        </div>
-                                        <div className="genre-text">You Are Not So Smart</div>
-                                    </div>
-                                </div>
-                            </Link>
+                           {podcasts}
                         </li>
 
                         <div className="category-header">

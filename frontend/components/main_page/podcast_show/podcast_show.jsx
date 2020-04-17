@@ -11,15 +11,15 @@ class PodcastShow extends React.Component {
     }
 
     componentDidMount() {
-        debugger
+        
         this.props.getPodcast(this.props.match.params.podcastId).then(podcast => {
-            debugger
+            
             this.setState({podcast: podcast.podcast})
         })
     }
 
     render() {
-        debugger
+        
 
         if (this.state.podcast === '') {
             return (
@@ -31,7 +31,7 @@ class PodcastShow extends React.Component {
         };
 
         const episodes = this.state.podcast.episode_names.map( episode => {
-            return <li className="episode" > <i className="fas fa-music"></i>{episode.episode_name}</li>
+            return <li className="episode" key={episode.id}> <i className="fas fa-music"></i>{episode.episode_name}</li>
         })
 
         return (

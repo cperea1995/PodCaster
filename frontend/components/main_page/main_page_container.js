@@ -3,7 +3,7 @@ import { getPodcasts } from '../../actions/podcast_actions';
 import MainPage from './main_page';
 
 const msp = state => {
-    debugger
+   
     return {
         podcasts: Object.values(state.podcastParts.podcasts).slice(0,6)
     };

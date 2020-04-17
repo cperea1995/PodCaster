@@ -10,12 +10,12 @@ class MainPage extends React.Component {
     }
 
     componentDidMount() {
-        debugger
+        
         this.props.getPodcasts();
     }
 
     render() {
-        debugger
+       
 
         const podcasts = this.props.podcasts.map( podcast => {
             return <PodcastIndexItem podcastId={podcast.id} podcastName={podcast.podcast_name} podcastArt={podcast.photoUrl} key={podcast.id} />

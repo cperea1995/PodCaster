@@ -29,5 +29,4 @@ class Api::EpisodesController < ApplicationController
         params.require(:episode).permit(:episode_name, :podcast_id)
     end
 
-    def 
 end

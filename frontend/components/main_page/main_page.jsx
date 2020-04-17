@@ -190,7 +190,7 @@ class MainPage extends React.Component {
                         </div>
                        
                         <li className="bottom-contained">
-                            <Link to="https://www.youtube.com/watch?v=4fWyzwo1xg0">
+                            <Link to="/podcasts">
                                 <div className="podcast-container">
                                     <div className="tester">
                                         <div className="square sad">

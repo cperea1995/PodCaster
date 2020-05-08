@@ -26165,3 +26165,774 @@ Completed 200 OK in 664ms (Views: 294.2ms | ActiveRecord: 365.2ms)
 [ActiveJob] [ActiveStorage::AnalyzeJob] [58f6a190-e70b-49ef-9cd5-75c277f7be13]   ↳ db/seeds.rb:226
 [ActiveJob] [ActiveStorage::AnalyzeJob] [58f6a190-e70b-49ef-9cd5-75c277f7be13] Performed ActiveStorage::AnalyzeJob (Job ID: 58f6a190-e70b-49ef-9cd5-75c277f7be13) from Inline(default) in 93.43ms
 [ActiveJob] Enqueued ActiveStorage::AnalyzeJob (Job ID: 58f6a190-e70b-49ef-9cd5-75c277f7be13) to Inline(default) with arguments: #<GlobalID:0x00007fb748121798 @uri=#<URI::GID gid://pod-caster/ActiveStorage::Blob/92>>
+Started GET "/" for ::1 at 2020-05-08 10:12:36 -0400
+  [1m[35m (7.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (33.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (166.8ms)
+Completed 200 OK in 3183ms (Views: 3062.0ms | ActiveRecord: 113.7ms)
+
+
+Started GET "/api/podcasts" for ::1 at 2020-05-08 10:12:41 -0400
+Processing by Api::PodcastsController#index as JSON
+  Rendering api/podcasts/index.json.jbuilder
+  [1m[36mPodcast Load (261.0ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ app/views/api/podcasts/index.json.jbuilder:1
+  Rendered api/podcasts/_podcast.json.jbuilder (0.6ms)
+  [1m[36mActiveStorage::Attachment Load (41.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 153], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (4.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 154], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (38.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 155], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (25.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 156], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 157], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 158], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (25.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 159], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 160], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (8.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (23.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 161], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 162], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (15.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 163], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 164], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 165], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (15.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 166], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 167], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (22.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 168], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 169], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (24.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 170], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 171], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 172], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (18.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 173], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 174], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 175], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (25.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 176], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 177], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (22.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 178], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 179], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 180], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (19.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 181], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (32.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 182], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/index.json.jbuilder (1422.4ms)
+Completed 200 OK in 1474ms (Views: 511.4ms | ActiveRecord: 933.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-08 10:18:50 -0400
+  [1m[35m (27.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"demouser@demo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demouser@demo.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+  [1m[35m (15.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demouser@demo.com"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "PrtJrM_AidPTNoHo-dQx2Q"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "DEMO"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Update (48.7ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "PrtJrM_AidPTNoHo-dQx2Q"], ["updated_at", "2020-05-08 14:18:51.290209"], ["id", 30]]
+  ↳ app/models/user.rb:58
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:58
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (3.4ms)
+Completed 200 OK in 458ms (Views: 21.1ms | ActiveRecord: 111.6ms)
+
+
+Started GET "/api/podcasts" for ::1 at 2020-05-08 10:18:52 -0400
+Processing by Api::PodcastsController#index as JSON
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ffd959910e4bb020175c396fad7a918ed6bc9f1c/radiolab.jpg" for ::1 at 2020-05-08 10:18:52 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d66e61b7018211e3b437b994a793d32e0b89aeb0/thedaily.jpeg" for ::1 at 2020-05-08 10:18:52 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--474c30c474da0f57bcf9a7bb314c02695a4ada8b/serial.png" for ::1 at 2020-05-08 10:18:52 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9fc1059f4ba0f5358ebdc7622381ccfdf59a15ca/99invisible.png" for ::1 at 2020-05-08 10:18:52 -0400
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--474c30c474da0f57bcf9a7bb314c02695a4ada8b", "filename"=>"serial"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ffd959910e4bb020175c396fad7a918ed6bc9f1c", "filename"=>"radiolab"}
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d66e61b7018211e3b437b994a793d32e0b89aeb0", "filename"=>"thedaily"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9fc1059f4ba0f5358ebdc7622381ccfdf59a15ca", "filename"=>"99invisible"}
+  Rendering api/podcasts/index.json.jbuilder
+  [1m[36mPodcast Load (69.8ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ app/views/api/podcasts/index.json.jbuilder:1
+  Rendered api/podcasts/_podcast.json.jbuilder (0.4ms)
+  [1m[36mActiveStorage::Blob Load (2.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (30.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (7.5ms) [0m[34mGenerated URL for file at key: UYsPV1N3rDZWE5Qqwhi625jY (https://podcaster-dev.s3.amazonaws.com/UYsPV1N3rDZWE5Qqwhi625jY?response-content-disposition=inline%3B%20filename%3D%22thedaily.jpeg%22%3B%20filename%2A%3DUTF-8%27%27thedaily.jpeg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=367c42b23efb7e3304bafc7e86fc8d7782b67e88a3784e175fca23b68ae4a5bf)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/UYsPV1N3rDZWE5Qqwhi625jY?response-content-disposition=inline%3B%20filename%3D%22thedaily.jpeg%22%3B%20filename%2A%3DUTF-8%27%27thedaily.jpeg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=367c42b23efb7e3304bafc7e86fc8d7782b67e88a3784e175fca23b68ae4a5bf
+  [1m[36mActiveStorage::Blob Load (39.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+Completed 302 Found in 185ms (ActiveRecord: 76.3ms)
+
+
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.6ms) [0m[34mGenerated URL for file at key: eeF5PGGXNjH9EnGULUwabuPT (https://podcaster-dev.s3.amazonaws.com/eeF5PGGXNjH9EnGULUwabuPT?response-content-disposition=inline%3B%20filename%3D%22radiolab.jpg%22%3B%20filename%2A%3DUTF-8%27%27radiolab.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ebd9f550a2d7275781fe366a900f879fa2b2ed49fa817bcc803764d1baee4806)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/eeF5PGGXNjH9EnGULUwabuPT?response-content-disposition=inline%3B%20filename%3D%22radiolab.jpg%22%3B%20filename%2A%3DUTF-8%27%27radiolab.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ebd9f550a2d7275781fe366a900f879fa2b2ed49fa817bcc803764d1baee4806
+Completed 302 Found in 207ms (ActiveRecord: 87.9ms)
+
+
+[36m  S3 Storage (5.6ms) [0m[34mGenerated URL for file at key: rLB2hfizoksiAi5Pzz7FBxn1 (https://podcaster-dev.s3.amazonaws.com/rLB2hfizoksiAi5Pzz7FBxn1?response-content-disposition=inline%3B%20filename%3D%2299invisible.png%22%3B%20filename%2A%3DUTF-8%27%2799invisible.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ce6c1ac5608a2b4452245cf92c3509ca013efb113127fd6a83735061c12f7c70)[0m
+[36m  S3 Storage (1.5ms) [0m[34mGenerated URL for file at key: rSWDfkTs5P39meRHEUpDmidc (https://podcaster-dev.s3.amazonaws.com/rSWDfkTs5P39meRHEUpDmidc?response-content-disposition=inline%3B%20filename%3D%22serial.png%22%3B%20filename%2A%3DUTF-8%27%27serial.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6c58871d261732dd6f0c396bcee21f153820afbf83a452382712a70e213dd50f)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/rLB2hfizoksiAi5Pzz7FBxn1?response-content-disposition=inline%3B%20filename%3D%2299invisible.png%22%3B%20filename%2A%3DUTF-8%27%2799invisible.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=ce6c1ac5608a2b4452245cf92c3509ca013efb113127fd6a83735061c12f7c70
+Redirected to https://podcaster-dev.s3.amazonaws.com/rSWDfkTs5P39meRHEUpDmidc?response-content-disposition=inline%3B%20filename%3D%22serial.png%22%3B%20filename%2A%3DUTF-8%27%27serial.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6c58871d261732dd6f0c396bcee21f153820afbf83a452382712a70e213dd50f
+Completed 302 Found in 222ms (ActiveRecord: 59.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--486f4859434a9916b6027b25396aee454dda9d8a/criminal.png" for ::1 at 2020-05-08 10:18:52 -0400
+Completed 302 Found in 219ms (ActiveRecord: 47.3ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ccc9f2fcf421a24bf8c6040c56d3e80d042ee0dc/thisamericanlife.png" for ::1 at 2020-05-08 10:18:52 -0400
+Processing by ActiveStorage::BlobsController#show as PNG
+  [1m[36mActiveStorage::Attachment Load (2.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 153], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--486f4859434a9916b6027b25396aee454dda9d8a", "filename"=>"criminal"}
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ccc9f2fcf421a24bf8c6040c56d3e80d042ee0dc", "filename"=>"thisamericanlife"}
+  [1m[36mActiveStorage::Blob Load (13.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.4ms) [0m[34mGenerated URL for file at key: AxB4DwajTpSxaWaFBSS1bTTS (https://podcaster-dev.s3.amazonaws.com/AxB4DwajTpSxaWaFBSS1bTTS?response-content-disposition=inline%3B%20filename%3D%22criminal.png%22%3B%20filename%2A%3DUTF-8%27%27criminal.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=809fd0c3adca99d8d6dd3f50c76980ded917aa6ed8abb458db9be73392deb1a5)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/AxB4DwajTpSxaWaFBSS1bTTS?response-content-disposition=inline%3B%20filename%3D%22criminal.png%22%3B%20filename%2A%3DUTF-8%27%27criminal.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=809fd0c3adca99d8d6dd3f50c76980ded917aa6ed8abb458db9be73392deb1a5
+Completed 302 Found in 38ms (ActiveRecord: 13.2ms)
+
+
+  [1m[36mActiveStorage::Blob Load (96.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.4ms) [0m[34mGenerated URL for file at key: QNJnMVDDmay32oJsva2qEK7y (https://podcaster-dev.s3.amazonaws.com/QNJnMVDDmay32oJsva2qEK7y?response-content-disposition=inline%3B%20filename%3D%22thisamericanlife.png%22%3B%20filename%2A%3DUTF-8%27%27thisamericanlife.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6855d093f193f8d210751caa09c5b10e5950f8f14d8f996f20be6e11be9f308d)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/QNJnMVDDmay32oJsva2qEK7y?response-content-disposition=inline%3B%20filename%3D%22thisamericanlife.png%22%3B%20filename%2A%3DUTF-8%27%27thisamericanlife.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200508%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200508T141852Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=6855d093f193f8d210751caa09c5b10e5950f8f14d8f996f20be6e11be9f308d
+Completed 302 Found in 105ms (ActiveRecord: 96.2ms)
+
+
+  [1m[36mActiveStorage::Blob Load (54.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.9ms)
+  [1m[36mActiveStorage::Attachment Load (75.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 154], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 155], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 156], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (4.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (22.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 157], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (8.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (32.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 158], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (5.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (28.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 159], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (8.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (22.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 160], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (28.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 161], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (3.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (26.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 162], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 163], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (11.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 164], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (1.7ms)
+  [1m[36mActiveStorage::Attachment Load (261.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 165], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (88.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (126.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 166], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.3ms)
+  [1m[36mActiveStorage::Attachment Load (8.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 167], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (20.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 168], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 169], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (23.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 170], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.5ms)
+  [1m[36mActiveStorage::Attachment Load (22.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 171], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 172], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (23.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 173], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 174], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (13.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 175], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (6.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (3.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 176], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (20.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 177], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (21.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 178], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 179], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (24.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 180], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 181], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (30.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 182], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/index.json.jbuilder (1968.5ms)
+Completed 200 OK in 2066ms (Views: 749.6ms | ActiveRecord: 1231.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-08 10:18:54 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "PrtJrM_AidPTNoHo-dQx2Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (1.0ms)
+  Rendered static_pages/root.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 1666ms (Views: 1662.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/podcasts" for ::1 at 2020-05-08 10:18:56 -0400
+Processing by Api::PodcastsController#index as JSON
+  Rendering api/podcasts/index.json.jbuilder
+  [1m[36mPodcast Load (23.7ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ app/views/api/podcasts/index.json.jbuilder:1
+  Rendered api/podcasts/_podcast.json.jbuilder (0.6ms)
+  [1m[36mActiveStorage::Attachment Load (1.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 153], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (35.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (9.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 154], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (37.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (77.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 155], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (47.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.8ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 156], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 157], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (29.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 158], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (3.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 159], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (25.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (42.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 160], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (46.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 161], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (30.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 162], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (49.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 163], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (7.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 164], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (27.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 165], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (6.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (24.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 166], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 167], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (8.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (23.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 168], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (5.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 169], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 170], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (22.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 171], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 172], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (18.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 173], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.4ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 174], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 175], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (24.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 176], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (3.0ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 177], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 178], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (25.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 179], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (4.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (35.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 180], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (46.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 181], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 182], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/index.json.jbuilder (1031.8ms)
+Completed 200 OK in 1055ms (Views: 279.5ms | ActiveRecord: 770.2ms)
+
+
+Started GET "/" for ::1 at 2020-05-08 10:19:47 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (32.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "PrtJrM_AidPTNoHo-dQx2Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 153ms (Views: 115.2ms | ActiveRecord: 32.5ms)
+
+
+Started GET "/api/podcasts" for ::1 at 2020-05-08 10:19:47 -0400
+Processing by Api::PodcastsController#index as JSON
+  Rendering api/podcasts/index.json.jbuilder
+  [1m[36mPodcast Load (34.2ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ app/views/api/podcasts/index.json.jbuilder:1
+  Rendered api/podcasts/_podcast.json.jbuilder (0.6ms)
+  [1m[36mActiveStorage::Attachment Load (20.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 153], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 154], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (43.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 155], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (87.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 156], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (2.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 157], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (81.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 158], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (3.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 159], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (20.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 160], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (5.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (7.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 161], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (33.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.2ms)
+  [1m[36mActiveStorage::Attachment Load (2.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 162], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (38.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 163], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (24.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 164], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 165], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.3ms)
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 166], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 167], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (14.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 168], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (2.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 169], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (24.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 170], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 171], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 172], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (24.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 173], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 174], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 175], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 176], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (16.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.8ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 177], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 178], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (29.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 179], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 180], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (1.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 181], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (21.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 182], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/index.json.jbuilder (821.6ms)
+Completed 200 OK in 847ms (Views: 275.9ms | ActiveRecord: 566.3ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-05-08 10:20:17 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "PrtJrM_AidPTNoHo-dQx2Q"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demouser@demo.com"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "8-tfrl17Q7DzV9t71qNP4w"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "DEMO"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Update (4.2ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "8-tfrl17Q7DzV9t71qNP4w"], ["updated_at", "2020-05-08 14:20:17.247852"], ["id", 30]]
+  ↳ app/models/user.rb:58
+  [1m[35m (26.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:58
+Completed 200 OK in 50ms (Views: 0.3ms | ActiveRecord: 32.7ms)
+
+

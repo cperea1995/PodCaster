@@ -7,7 +7,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+
+    <%= favicon_link_tag asset_path('favicon.ico') %>
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
     <script type="text/javascript">
       window.logo = "<%= image_url('podcaster-logo.png') %>"
     </script>
@@ -20,6 +24,8 @@
       src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
       data-auto-a11y="true"
     ></script>
+
+    <meta property="og:image" content='<%= image_url asset_path('1.png') %>' />
   </head>
 
   <body>

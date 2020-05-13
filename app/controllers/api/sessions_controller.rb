@@ -7,7 +7,7 @@ class Api::SessionsController < ApplicationController
             login!(@user)
            render "api/users/show"
         else
-            render json: ["Please enter your PodCaster email address."], status: 422
+            render json: ["Incorrect email or password."], status: 422
         end
     end
 

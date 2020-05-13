@@ -39,19 +39,28 @@ class LoginForm extends React.Component {
             
                 <div className="login-container">
                     <h2 className="button-header" >To continue, log in to PodCaster.</h2>
+                        
+                        <ul className="email-error-list">
+                            <li>
+                                <div className={this.props.errors.length > 0 ? "incorrect-email-password" : ""}>
+                                    {this.props.errors}
+                                </div>
+                            </li>
+                        </ul>
+
                     <div className="button-container">
                         <input className="git-button" type="button" onClick={() => location.href ='https://github.com/cperea1995'} value="Checkout My Github"/>
                         <input className="linkedin-button" type="button" onClick={() => location.href = 'https://www.linkedin.com/in/christian-perea-076228198'} value="Checkout My linkedin"/>
                         <h3 className="or"><span className="or-span">OR</span></h3>
                     </div>
                     <form className="login-form" onSubmit={this.handleSubmit}>
-                        <input className={this.props.errors.length > 0 ? "email-input-error" : "email-input"}
+                        <input className="email-input"
                         type="text"
                         value={this.state.email}
                         placeholder="Email"
                         onChange={this.update('email')}
                         />
-                        <li>{this.props.errors}</li>
+
                         <input className="password-input" 
                         type="password"
                         value={this.state.password}

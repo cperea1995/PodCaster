@@ -82,6 +82,10 @@
     border: 1px solid red;
 }
 
+.email-error-list {
+    list-style-type: none;
+}
+
 .password-input {
     /* width: 434px; */
     width: 100%;
@@ -229,4 +233,15 @@
     /* border: 2px solid black; */
 }
 
+.incorrect-email-password {
+    background-color: red;
+    color: white;
+    width: 451px;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 45px;
+}
 

@@ -44,7 +44,8 @@ class SignupForm extends React.Component {
                 
                 <div className="signup-container">
                     <div className="signup-button-container">
-                        <input className="signup-git-button" type="button" onClick={() => location.href = 'https://github.com/cperea1995/PodCaster/wiki'} value="Checkout My Github" />
+                        <div className="signup-git-button" onClick={() => location.href = 'https://github.com/cperea1995'}><span className="social-icon"><i className="fab fa-github"></i></span>Checkout My Github</div>
+                        {/* {<input className="signup-git-button" type="button" onClick={() => location.href = 'https://github.com/cperea1995/PodCaster/wiki'} value="Checkout My Github" />} */}
                         <h3 className="signup-or"><span className="signup-or-span">or</span></h3>
                         <h3 className="signup-texthead">Sign up with your email address</h3>
                     </div>

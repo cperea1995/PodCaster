@@ -234,14 +234,21 @@
 }
 
 .incorrect-email-password {
-    background-color: red;
+    // font-size: 10px;
+    background-color: rgb(224, 18, 50);
     color: white;
-    width: 451px;
-    height: 45px;
-    margin-top: 20px;
-    margin-bottom: 35px;
+    width: 28.1875em;
+    height: 2.8125em;
+    margin-top: 1.25em;
+    margin-bottom: 2.1875em;
     text-align: center;
     vertical-align: middle;
-    line-height: 45px;
+    line-height: 2.8125em;
+    font-family: 'Montserrat', sans-serif;
+    // font-size: 14px;
+}
+
+.error-text {
+    font-size: 11px;
 }
 

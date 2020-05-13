@@ -28487,3 +28487,579 @@ Processing by Api::SessionsController#create as JSON
 Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for ::1 at 2020-05-13 17:04:16 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 140ms (Views: 136.7ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:04:19 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"dfgh", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (24.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dfgh"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 26ms (Views: 0.2ms | ActiveRecord: 24.0ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:04:22 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 62ms (Views: 57.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:04:24 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 58ms (Views: 54.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:04:26 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (23.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 81ms (Views: 54.8ms | ActiveRecord: 23.2ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:04:30 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"dfgh", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dfgh"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:05:04 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (13.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 187ms (Views: 165.3ms | ActiveRecord: 13.8ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:05:07 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:05:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 159ms (Views: 153.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:05:23 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdf"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:05:31 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (25.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 200ms (Views: 169.0ms | ActiveRecord: 25.2ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:05:34 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:05:45 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (23.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 180ms (Views: 151.7ms | ActiveRecord: 23.7ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:05:48 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"dfgh", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dfgh"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:06:53 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (21.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 202ms (Views: 173.7ms | ActiveRecord: 21.7ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:06:56 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:07:07 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (19.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 179ms (Views: 152.1ms | ActiveRecord: 19.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:07:10 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:07:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (14.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 767ms (Views: 744.0ms | ActiveRecord: 14.9ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:07:43 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdf"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 4ms (Views: 0.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:08:23 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 583ms (Views: 576.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:08:28 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"asedf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asedf"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:09:25 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (16.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 87ms (Views: 66.8ms | ActiveRecord: 16.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:12:28 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"dfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:13:09 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 202ms (Views: 197.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:13:12 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:13:20 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (8.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 108ms (Views: 89.9ms | ActiveRecord: 8.4ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:13:23 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:13:33 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 359ms (Views: 346.1ms | ActiveRecord: 7.1ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:13:35 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:13:37 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:13:39 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 56ms (Views: 50.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:13:42 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"sdfg", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "sdfg"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:17:05 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (17.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 247ms (Views: 225.2ms | ActiveRecord: 17.7ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:17:08 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdf"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-05-13 17:17:44 -0400
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" IS NULL LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  Rendered static_pages/root.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:17:49 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "asdf"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+Completed 422 Unprocessable Entity in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/session" for ::1 at 2020-05-13 17:18:26 -0400
+Processing by Api::SessionsController#create as JSON
+  Parameters: {"user"=>{"email"=>"demouser@demo.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demouser@demo.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demouser@demo.com"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "A-s9KztLBWZwK39qp9nG0w"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "DEMO"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Update (39.1ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "A-s9KztLBWZwK39qp9nG0w"], ["updated_at", "2020-05-13 21:18:26.705469"], ["id", 30]]
+  ↳ app/models/user.rb:58
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:58
+  Rendering api/users/show.json.jbuilder
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered api/users/show.json.jbuilder (5.7ms)
+Completed 200 OK in 347ms (Views: 25.7ms | ActiveRecord: 60.7ms)
+
+
+Started GET "/api/podcasts" for ::1 at 2020-05-13 17:18:26 -0400
+Processing by Api::PodcastsController#index as JSON
+  Rendering api/podcasts/index.json.jbuilder
+  [1m[36mPodcast Load (16.8ms)[0m  [1m[34mSELECT "podcasts".* FROM "podcasts"[0m
+  ↳ app/views/api/podcasts/index.json.jbuilder:1
+  Rendered api/podcasts/_podcast.json.jbuilder (2.3ms)
+  [1m[36mActiveStorage::Attachment Load (1.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 153], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (17.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 154], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 155], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 156], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (18.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 157], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.8ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.6ms)
+  [1m[36mActiveStorage::Attachment Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 158], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (25.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 159], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 69], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 160], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 70], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (24.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 161], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 71], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 162], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 72], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 163], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 73], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (23.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 164], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 74], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 165], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 75], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 166], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (24.9ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 76], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 167], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 168], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 169], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (25.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 170], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.9ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 171], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 81], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 172], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 82], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (22.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 173], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 83], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 174], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 84], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 175], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 85], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (22.1ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 176], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 86], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.7ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 177], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.6ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 87], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 178], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (24.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 88], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 179], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 89], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 180], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 90], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (21.2ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 181], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 91], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/_podcast.json.jbuilder (0.1ms)
+  [1m[36mActiveStorage::Attachment Load (0.4ms)[0m  [1m[34mSELECT  "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = $1 AND "active_storage_attachments"."record_type" = $2 AND "active_storage_attachments"."name" = $3 LIMIT $4[0m  [["record_id", 182], ["record_type", "Podcast"], ["name", "podcast_art"], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  [1m[36mActiveStorage::Blob Load (0.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 92], ["LIMIT", 1]]
+  ↳ app/views/api/podcasts/index.json.jbuilder:4
+  Rendered api/podcasts/index.json.jbuilder (781.9ms)
+Completed 200 OK in 878ms (Views: 426.2ms | ActiveRecord: 391.5ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--474c30c474da0f57bcf9a7bb314c02695a4ada8b/serial.png" for ::1 at 2020-05-13 17:18:28 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9fc1059f4ba0f5358ebdc7622381ccfdf59a15ca/99invisible.png" for ::1 at 2020-05-13 17:18:28 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d66e61b7018211e3b437b994a793d32e0b89aeb0/thedaily.jpeg" for ::1 at 2020-05-13 17:18:28 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ffd959910e4bb020175c396fad7a918ed6bc9f1c/radiolab.jpg" for ::1 at 2020-05-13 17:18:28 -0400
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ccc9f2fcf421a24bf8c6040c56d3e80d042ee0dc/thisamericanlife.png" for ::1 at 2020-05-13 17:18:28 -0400
+Processing by ActiveStorage::BlobsController#show as PNG
+Processing by ActiveStorage::BlobsController#show as PNG
+Processing by ActiveStorage::BlobsController#show as JPEG
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--474c30c474da0f57bcf9a7bb314c02695a4ada8b", "filename"=>"serial"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--d66e61b7018211e3b437b994a793d32e0b89aeb0", "filename"=>"thedaily"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9fc1059f4ba0f5358ebdc7622381ccfdf59a15ca", "filename"=>"99invisible"}
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ccc9f2fcf421a24bf8c6040c56d3e80d042ee0dc", "filename"=>"thisamericanlife"}
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBSZz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--ffd959910e4bb020175c396fad7a918ed6bc9f1c", "filename"=>"radiolab"}
+  [1m[36mActiveStorage::Blob Load (1.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 64], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (8.6ms) [0m[34mGenerated URL for file at key: rSWDfkTs5P39meRHEUpDmidc (https://podcaster-dev.s3.amazonaws.com/rSWDfkTs5P39meRHEUpDmidc?response-content-disposition=inline%3B%20filename%3D%22serial.png%22%3B%20filename%2A%3DUTF-8%27%27serial.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=baf475f0d8be23c3e922ed3d98f3af328bb6f73caea277e98da07f8d6bfd6884)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/rSWDfkTs5P39meRHEUpDmidc?response-content-disposition=inline%3B%20filename%3D%22serial.png%22%3B%20filename%2A%3DUTF-8%27%27serial.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=baf475f0d8be23c3e922ed3d98f3af328bb6f73caea277e98da07f8d6bfd6884
+Completed 302 Found in 60ms (ActiveRecord: 1.1ms)
+
+
+  [1m[36mActiveStorage::Blob Load (20.3ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 66], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mActiveStorage::Blob Load (20.2ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 67], ["LIMIT", 1]]
+[36m  S3 Storage (2.1ms) [0m[34mGenerated URL for file at key: UYsPV1N3rDZWE5Qqwhi625jY (https://podcaster-dev.s3.amazonaws.com/UYsPV1N3rDZWE5Qqwhi625jY?response-content-disposition=inline%3B%20filename%3D%22thedaily.jpeg%22%3B%20filename%2A%3DUTF-8%27%27thedaily.jpeg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=15166b168b924a642b2d057ebe7329f70234c9de4c45560bfe3549cf0e90e50f)[0m
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to https://podcaster-dev.s3.amazonaws.com/UYsPV1N3rDZWE5Qqwhi625jY?response-content-disposition=inline%3B%20filename%3D%22thedaily.jpeg%22%3B%20filename%2A%3DUTF-8%27%27thedaily.jpeg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=15166b168b924a642b2d057ebe7329f70234c9de4c45560bfe3549cf0e90e50f
+  [1m[36mActiveStorage::Blob Load (12.0ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 65], ["LIMIT", 1]]
+[36m  S3 Storage (2.2ms) [0m[34mGenerated URL for file at key: rLB2hfizoksiAi5Pzz7FBxn1 (https://podcaster-dev.s3.amazonaws.com/rLB2hfizoksiAi5Pzz7FBxn1?response-content-disposition=inline%3B%20filename%3D%2299invisible.png%22%3B%20filename%2A%3DUTF-8%27%2799invisible.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4528592323f0124287b661f3a87d642b1c6548bb8832c71ccc49ec5babfd9c8f)[0m
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Completed 302 Found in 74ms (ActiveRecord: 23.3ms)
+
+
+[36m  S3 Storage (2.0ms) [0m[34mGenerated URL for file at key: eeF5PGGXNjH9EnGULUwabuPT (https://podcaster-dev.s3.amazonaws.com/eeF5PGGXNjH9EnGULUwabuPT?response-content-disposition=inline%3B%20filename%3D%22radiolab.jpg%22%3B%20filename%2A%3DUTF-8%27%27radiolab.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=67aa7e08911f57444d5f2baf0790e3299fdc730dd4349ff0b0237b5a2787a72c)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/eeF5PGGXNjH9EnGULUwabuPT?response-content-disposition=inline%3B%20filename%3D%22radiolab.jpg%22%3B%20filename%2A%3DUTF-8%27%27radiolab.jpg&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=67aa7e08911f57444d5f2baf0790e3299fdc730dd4349ff0b0237b5a2787a72c
+  [1m[36mActiveStorage::Blob Load (1.5ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 63], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Completed 302 Found in 101ms (ActiveRecord: 12.0ms)
+
+
+Redirected to https://podcaster-dev.s3.amazonaws.com/rLB2hfizoksiAi5Pzz7FBxn1?response-content-disposition=inline%3B%20filename%3D%2299invisible.png%22%3B%20filename%2A%3DUTF-8%27%2799invisible.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4528592323f0124287b661f3a87d642b1c6548bb8832c71ccc49ec5babfd9c8f
+Completed 302 Found in 114ms (ActiveRecord: 21.8ms)
+
+
+[36m  S3 Storage (2.2ms) [0m[34mGenerated URL for file at key: QNJnMVDDmay32oJsva2qEK7y (https://podcaster-dev.s3.amazonaws.com/QNJnMVDDmay32oJsva2qEK7y?response-content-disposition=inline%3B%20filename%3D%22thisamericanlife.png%22%3B%20filename%2A%3DUTF-8%27%27thisamericanlife.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7cb67697a5665b22273e838442d100128a13bc39add1dd547397aada710332bc)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/QNJnMVDDmay32oJsva2qEK7y?response-content-disposition=inline%3B%20filename%3D%22thisamericanlife.png%22%3B%20filename%2A%3DUTF-8%27%27thisamericanlife.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=7cb67697a5665b22273e838442d100128a13bc39add1dd547397aada710332bc
+Completed 302 Found in 121ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--486f4859434a9916b6027b25396aee454dda9d8a/criminal.png" for ::1 at 2020-05-13 17:18:28 -0400
+Processing by ActiveStorage::BlobsController#show as PNG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBTUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--486f4859434a9916b6027b25396aee454dda9d8a", "filename"=>"criminal"}
+  [1m[36mActiveStorage::Blob Load (26.1ms)[0m  [1m[34mSELECT  "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = $1 LIMIT $2[0m  [["id", 68], ["LIMIT", 1]]
+  ↳ /Users/christianperea/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+[36m  S3 Storage (3.7ms) [0m[34mGenerated URL for file at key: AxB4DwajTpSxaWaFBSS1bTTS (https://podcaster-dev.s3.amazonaws.com/AxB4DwajTpSxaWaFBSS1bTTS?response-content-disposition=inline%3B%20filename%3D%22criminal.png%22%3B%20filename%2A%3DUTF-8%27%27criminal.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4ffe5511c138ffa9cdd875bcefbc967718d3463153d72c4d69db7dba516a240d)[0m
+Redirected to https://podcaster-dev.s3.amazonaws.com/AxB4DwajTpSxaWaFBSS1bTTS?response-content-disposition=inline%3B%20filename%3D%22criminal.png%22%3B%20filename%2A%3DUTF-8%27%27criminal.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWW3MWEBW7TJAWZDQ%2F20200513%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200513T211828Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=4ffe5511c138ffa9cdd875bcefbc967718d3463153d72c4d69db7dba516a240d
+Completed 302 Found in 44ms (ActiveRecord: 26.1ms)
+
+
+Started DELETE "/api/session" for ::1 at 2020-05-13 17:18:37 -0400
+Processing by Api::SessionsController#destroy as JSON
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "A-s9KztLBWZwK39qp9nG0w"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:6
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["email", "demouser@demo.com"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["session_token", "-vAck0DYQE5qMWlU3bpZJg"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "DEMO"], ["id", 30], ["LIMIT", 1]]
+  ↳ app/models/user.rb:58
+  [1m[36mUser Update (1.1ms)[0m  [1m[33mUPDATE "users" SET "session_token" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["session_token", "-vAck0DYQE5qMWlU3bpZJg"], ["updated_at", "2020-05-13 21:18:37.143197"], ["id", 30]]
+  ↳ app/models/user.rb:58
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/user.rb:58
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 5.4ms)
+
+

@@ -43,7 +43,7 @@ class LoginForm extends React.Component {
                         <ul className="email-error-list">
                             <li>
                                 <div className={this.props.errors.length > 0 ? "incorrect-email-password" : ""}>
-                                    {this.props.errors}
+                                    <span className="error-text">{this.props.errors}</span>
                                 </div>
                             </li>
                         </ul>

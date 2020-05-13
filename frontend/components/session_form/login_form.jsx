@@ -49,8 +49,10 @@ class LoginForm extends React.Component {
                         </ul>
 
                     <div className="button-container">
-                        <input className="git-button" type="button" onClick={() => location.href ='https://github.com/cperea1995'} value="Checkout My Github"/>
-                        <input className="linkedin-button" type="button" onClick={() => location.href = 'https://www.linkedin.com/in/christian-perea-076228198'} value="Checkout My linkedin"/>
+                        <div className="git-button" onClick={() => location.href = 'https://github.com/cperea1995'}><span className="social-icon"><i className="fab fa-github"></i></span>Checkout My Github</div>
+                        <div className="linkedin-button" onClick={() => location.href = 'https://www.linkedin.com/in/christian-perea-076228198'}><span className="social-icon"><i className="fab fa-linkedin"></i></span>Checkout My linkedin</div>
+                        {/* {<input className="git-button" type="button" onClick={() => location.href ='https://github.com/cperea1995'} value="Checkout My Github"/>} */}
+                        {/* {<input className="linkedin-button" type="button" onClick={() => location.href = 'https://www.linkedin.com/in/christian-perea-076228198'} value="Checkout My linkedin"/>} */}
                         <h3 className="or"><span className="or-span">OR</span></h3>
                     </div>
                     <form className="login-form" onSubmit={this.handleSubmit}>

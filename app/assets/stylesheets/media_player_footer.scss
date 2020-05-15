@@ -46,6 +46,19 @@
     transition: .1s;
 }
 
+.fa-pause-circle {
+    color: #d9dadc;
+    font-size: 33px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.fa-pause-circle:hover {
+    transform: scale(1.1);
+    filter: brightness(150%);
+    transition: .1s;
+}
+
 .fa-step-forward {
     color: #d9dadc;
     font-size: 15px;
@@ -70,6 +83,7 @@
 .shuffle,
 .backward,
 .play,
+.pause,
 .forward,
 .replay {
     background: none;

@@ -8,6 +8,12 @@ class PodcastShow extends React.Component {
         this.state = {
             podcast: ''
         }
+
+        this.setCurrentSong = this.setCurrentSong.bind(this);
+    }
+
+    setCurrentSong() {
+        this.props.getCurrentSong("http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg")
     }
 
     componentDidMount() {
@@ -31,7 +37,7 @@ class PodcastShow extends React.Component {
         };
 
         const episodes = this.state.podcast.episode_names.map( episode => {
-            return <li className="episode" key={episode.id}> <i className="fas fa-music"></i>{episode.episode_name}</li>
+            return <li className="episode" key={episode.id} onClick={this.setCurrentSong}> <i className="fas fa-music"></i>{episode.episode_name}</li>
         })
 
         return (

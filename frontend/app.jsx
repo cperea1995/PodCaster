@@ -9,6 +9,7 @@ import MainPage from './components/main_page/main_page';
 import MainPageContainer from './components/main_page/main_page_container';
 import {AuthRoute, ProtectedRoute} from './util/route_util';
 import Footer from './components/media_player_footer/media_player_footer';
+import FooterContainer from './components/media_player_footer/media_player_footer_container';
 
 const App = () => {
     return (
@@ -24,7 +25,7 @@ const App = () => {
                 <ProtectedRoute exact path="/podcasts" component={PodcastIndexContainer}/>
                 <ProtectedRoute path="/podcasts/:podcastId" component={PodcastShowContainer} />
             </Switch>
-            <ProtectedRoute path="/" component={Footer} />
+            <ProtectedRoute path="/" component={FooterContainer} />
         </>
     );
 };

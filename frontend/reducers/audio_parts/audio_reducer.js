@@ -4,7 +4,8 @@ const audioReducer = (state = {}, action ) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_CURRENT_SONG:
-            return Object.assign({}, state, action.songURL)
+            // return Object.assign({}, state, action.songURL)
+            return action.songURL
         default:
             return state;
     };

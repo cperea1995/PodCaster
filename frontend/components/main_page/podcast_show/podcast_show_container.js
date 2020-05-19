@@ -1,6 +1,7 @@
 import { connect } from 'react-redux';
 import PodcastShow from './podcast_show';
 import { getPodcast } from '../../../actions/podcast_actions';
+import { receiveCurrentSong } from '../../../actions/audio_actions';
 
 
 const msp = (state, ownProps) => {
@@ -12,7 +13,8 @@ const msp = (state, ownProps) => {
 
 const mdp = (dispatch) => {
     return {
-        getPodcast: (podcastId) => dispatch(getPodcast(podcastId))
+        getPodcast: (podcastId) => dispatch(getPodcast(podcastId)),
+        getCurrentSong: (songURL) => dispatch(receiveCurrentSong(songURL))
     };
 };
 

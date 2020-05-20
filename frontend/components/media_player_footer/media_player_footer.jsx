@@ -4,7 +4,8 @@ class Footer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            playing: false
+            playing: false,
+            songUrl: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
         }
 
         this.play = this.play.bind(this);
@@ -38,13 +39,25 @@ class Footer extends React.Component {
 
     render() {
         // debugger
+
+        if (this.refs.music_player) {
+            const player = this.refs.music_player;
+            
+            if (player.currentSrc !== this.props.audio) {
+                player.src = this.props.audio;
+            }
+        }
+
+
+
+
         return (
             <>
                 <footer className="footer-container">
 
                     <audio ref="music_player">
                         {/* {<source src={this.props.audio} />} */}
-                        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" />
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" />
                     </audio>
 
                     <button className="shuffle"><i className="fas fa-random"></i></button>

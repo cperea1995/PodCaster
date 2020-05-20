@@ -12,7 +12,8 @@ class Footer extends React.Component {
     }
 
     play() {
-        const player = document.getElementById("music_player");
+        // const player = document.getElementById("music_player");
+        const player = this.refs.music_player;
         // debugger
 
         if (player.paused) {
@@ -25,7 +26,8 @@ class Footer extends React.Component {
     }
 
     pause() {
-        const player = document.getElementById("music_player");
+        // const player = document.getElementById("music_player");
+        const player = this.refs.music_player;
 
         if (!player.paused) {
             player.pause();
@@ -40,7 +42,7 @@ class Footer extends React.Component {
             <>
                 <footer className="footer-container">
 
-                    <audio id="music_player">
+                    <audio ref="music_player">
                         {/* {<source src={this.props.audio} />} */}
                         <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" />
                     </audio>

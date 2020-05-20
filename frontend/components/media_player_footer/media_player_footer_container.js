@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import Footer from './media_player_footer';
 import { receiveCurrentSong } from '../../actions/audio_actions';
 
-const msp = (state, ownProps) => {
+const msp = (state) => {
     return {
         audio: state.audioParts.audio
     };

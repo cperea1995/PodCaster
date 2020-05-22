@@ -42,6 +42,7 @@ class Footer extends React.Component {
 
         if (this.refs.music_player) {
             const player = this.refs.music_player;
+            // debugger
             
             if (player.currentSrc !== this.props.audio) {
                 player.src = this.props.audio;
@@ -57,7 +58,7 @@ class Footer extends React.Component {
 
                     <audio ref="music_player">
                         {/* {<source src={this.props.audio} />} */}
-                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" />
+                        <source src={this.state.songUrl} />
                     </audio>
 
                     <button className="shuffle"><i className="fas fa-random"></i></button>

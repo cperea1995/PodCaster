@@ -2,7 +2,11 @@
 
 # PodCaster
 
-PodCaster is an online podcast streaming service modeled after Spotify. 
+PodCaster is an online podcast streaming service modeled after Spotify that allows you to find Podcasts of any topic your heart desires!
+
+[Live Site](https://pod-caster.herokuapp.com/)
+
+![PodCaster GIF](./app/assets/images/podcaster.gif)
 
 ## Technologies Used:
 
@@ -50,7 +54,5 @@ end
 ### Podcast Creation
 
 ### Subscriptions
-
-### Social
 
 ### Search

@@ -49,6 +49,44 @@ class User < ApplicationRecord
 end
 ```
 
+# Continuous Audio Playback
+
+Users have the ability to listen to Podcasts while navigating the rest of the site. This was accomplished by making the media player it's own component which controlls all audio, so if another component is re-rendering it will not cause the media player to rerender. The audio itself is constucted with HTML5's Audio tags and a custom designed media player. The audio source is obtained from the audio slice of state which is changed upon clicking an episode.
+
+```
+class MediaPlayer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            playing: false,
+        }
+
+        this.play = this.play.bind(this);
+        this.pause = this.pause.bind(this);
+    }
+
+     render() {
+   
+        return (
+            <>
+                <footer className="footer-container">
+
+                    <audio ref="music_player">
+                        <source src={this.props.audio} />
+                    </audio>
+
+                    <button className="shuffle"><i className="fas fa-random"></i></button>
+                    <button className="backward"><i className="fas fa-step-backward"></i></button>
+                    {this.state.playing ? <button key="pause-icon" className="pause" onClick={this.pause}><i className="far fa-pause-circle"></i></button> : 
+                        <button key="play-icon" className="play" onClick={this.play}><i className="far fa-play-circle"></i></button>}
+                    <button className="forward"><i className="fas fa-step-forward"></i></button>
+                    <button className="replay"><i className="fas fa-retweet"></i></button>
+                </footer>
+            </>
+        );
+    }
+```
+
 # Features to Come:
 
 ### Podcast Creation

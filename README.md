@@ -49,6 +49,12 @@ class User < ApplicationRecord
 end
 ```
 
+![Render Errors GIF](./app/assets/images/render-errors.gif)
+
+# AWS S3
+
+With the integration of AWS S3 and Ruby on Rails storage space is no longer a concern. With the creation of data buckets, with certain policy permissions, user podcast art and audio are all stored securely in one place.
+
 # Continuous Audio Playback
 
 Users have the ability to listen to Podcasts while navigating the rest of the site. This was accomplished by making the media player it's own component which controlls all audio, so if another component is re-rendering it will not cause the media player to rerender. The audio itself is constucted with HTML5's Audio tags and a custom designed media player. The audio source is obtained from the audio slice of state which is changed upon clicking an episode.

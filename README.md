@@ -10,19 +10,19 @@ PodCaster is an online podcast streaming service modeled after Spotify that allo
 
 ## Technologies Used:
 
-* JavaScript
+* JavaScript 10.13.0
 
-* Reactjs
+* React 16.13.1
 
-* Redux
+* Redux 4.0.5
 
 * HTML5
 
-* SCSS / CSS
+* SCSS / CSS3
 
-* Ruby on Rails
+* Ruby on Rails 5.2.4.2
 
-* PostgreSQL
+* PostgreSQL 12.1
 
 * AWS S3
 
@@ -34,7 +34,7 @@ PodCaster is an online podcast streaming service modeled after Spotify that allo
 
 Users are not able to create or login to an account unless all frontend validations have been met. My user model takes care of checking if an email has already been taken and if a password has met minimum length. Passwords are thoroughly protected and never stored as plain text in the database, instead passwords are salted and hashed using BCrypt.
 
-```
+``` ruby
 class User < ApplicationRecord
     validates :email, presence: true, uniqueness: true
     validates :session_token, presence: true, uniqueness: true
@@ -61,7 +61,7 @@ With the integration of AWS S3 and Ruby on Rails storage space is no longer a co
 
 Users have the ability to listen to Podcasts while navigating the rest of the site. This was accomplished by making the media player it's own component which controlls all audio, so if another component is re-rendering it will not cause the media player to rerender. The audio itself is constucted with HTML5's Audio tags and a custom designed media player. The audio source is obtained from the audio slice of state which is changed upon clicking an episode.
 
-```
+``` javascript
 class MediaPlayer extends React.Component {
     constructor(props) {
         super(props);
@@ -76,6 +76,8 @@ class MediaPlayer extends React.Component {
      render() {
    
         return (
+```
+``` HTML
             <>
                 <footer className="footer-container">
 
